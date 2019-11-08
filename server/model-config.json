@@ -45,10 +45,6 @@
     "dataSource": "db",
     "public": true
   },
-  "Usuario": {
-    "dataSource": "db",
-    "public": true
-  },
   "Sessao": {
     "dataSource": "db",
     "public": true
