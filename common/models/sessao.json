@@ -1,0 +1,51 @@
+{
+  "name": "Sessao",
+  "plural": "Sessoes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "ano": {
+      "type": "string",
+      "required": true
+    },
+    "genero": {
+      "type": "string",
+      "required": true
+    },
+    "atores": {
+      "type": "string",
+      "required": true
+    },
+    "poster": {
+      "type": "string",
+      "required": true
+    },
+    "imdbId": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "local": {
+      "type": "string",
+      "required": true
+    },
+    "valor": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
