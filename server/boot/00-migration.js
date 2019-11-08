@@ -8,7 +8,7 @@ module.exports = (app, cb) => {
       'Role',
       'AccessToken',
       'Usuario',
-      'Sessoes',
+      'Sessao',
     ],
   };
 
