@@ -1,4 +1,4 @@
-package com.example.spotfind;
+package com.example.spotfind.Implementation;
 
 import androidx.activity.R;
 import androidx.appcompat.app.AppCompatActivity;
