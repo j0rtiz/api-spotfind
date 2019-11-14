@@ -1,5 +1,6 @@
 package com.example.spotfind;
 
+import androidx.activity.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
