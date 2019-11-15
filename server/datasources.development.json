@@ -1,0 +1,11 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "port": "5432",
+    "database": "spotfind",
+    "password": "postgres",
+    "name": "db",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}

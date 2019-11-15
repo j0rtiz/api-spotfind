@@ -37,14 +37,6 @@
     "dataSource": "db",
     "public": false
   },
-  "Carro": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Cliente": {
-    "dataSource": "db",
-    "public": true
-  },
   "Sessao": {
     "dataSource": "db",
     "public": true
