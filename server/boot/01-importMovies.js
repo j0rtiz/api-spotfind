@@ -41,13 +41,16 @@ async function getMoviesIds() {
 }
 
 async function getMovies(moviesIds) {
+  const places = ['CineBancários', 'GNC Iguatemi Porto Alegre', 'Cinemark Barra Sul', 'Cinemark Wallig', 'Cinépolis João Pessoa - POA', 'Cineflix Shopping Total', 'Cinemark Bourbon Ipiranga', 'GNC Lindóia', 'GNC Cinemas Moinhos', 'Espaço Itaú de Cinema - POA', 'GNC Praia de Belas'];
   const omdb = 'http://www.omdbapi.com/?apikey=31fcd18f&y=2019&type=movie&i=';
   const movies = moviesIds.map((movieId) => {
     return new Promise((resolve, reject) => {
       return axios.get(omdb + movieId)
         .then((res) => {
           const {Title: titulo, Year: ano, Genre: genero, Actors: atores, Poster: poster, imdbID: imdbId, Type: tipo} = res.data;
-          const movie = {titulo, ano, genero, atores, poster, imdbId, tipo, local: 'Canoas Shopping', valor: 30};
+          const local = getRandomName(places);
+          const valor = getRandomInt(20, 40);
+          const movie = {titulo, ano, genero, atores, poster, imdbId, tipo, local, valor};
 
           resolve(movie);
         })
@@ -56,4 +59,15 @@ async function getMovies(moviesIds) {
   });
 
   return Promise.all(movies);
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+
+  return (Math.random() * (max - min + 1)) + min | 0;
+}
+
+function getRandomName(names) {
+  return names[(Math.random() * names.length) | 0];
 }
