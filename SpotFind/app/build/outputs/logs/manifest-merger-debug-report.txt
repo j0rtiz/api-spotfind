@@ -1,140 +1,144 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\45ae33ec992ed492b98022ef2deb9b21\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\3fd45897b61c6351201600d2505b10a7\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\6ec8cd8632c1111b5aec246dfc532076\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\d4993dd2f3f86b93ebe35cf42fcc3734\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\7a9d4710979adcc3b11b8e38cd2f1161\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\26366c41aacba6ff1ad4d125e10236ec\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\7efc4936e86a561776a41402f3033472\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4bbd90bff435ef0cd46cb515f4db1f44\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4d97972cd17f044f8a179fac89d3c149\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\d1a29b5413ff2d61cee3714da8db6ae5\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\41142495a5966ba92a6731d4aef1443c\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\64430d16a4450277ee62bed605b8a315\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\9e7dc938f6f2a4babdedd162c0c9e9b7\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\cf0000d0f1ea44dcfb03d1317c7a0212\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4051633396431ebae157ccc0f31bc717\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\6f63047052c6492a31da55d04081d893\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\e2781e84b528fa1ffebd02d49bbbbd13\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\192bcc775013de0f9d80fead8e3579bd\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\14e0d25ae874d7d96071a72f770780bd\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\51cd1e745618f6257cbd75e0f26e1b95\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\1baaa0ea0144068a9e0ad690c3f89800\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\daa47187fb0f0a7c419d1b10e1677cdd\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\0554424e228349ffc3db0700d1324aa1\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\bad233a64070d55cab9a83b26afbf154\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:3:3-33
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:3:3-33
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:5:3-20:17
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\3fd45897b61c6351201600d2505b10a7\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\3fd45897b61c6351201600d2505b10a7\AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\64430d16a4450277ee62bed605b8a315\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\64430d16a4450277ee62bed605b8a315\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\cf0000d0f1ea44dcfb03d1317c7a0212\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\cf0000d0f1ea44dcfb03d1317c7a0212\AndroidManifest.xml:24:5-25:19
+ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:5:3-24:17
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\64430d16a4450277ee62bed605b8a315\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:10:5-31
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:10:5-31
 	android:label
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:8:5-37
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:8:5-37
 	android:roundIcon
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:9:5-50
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:9:5-50
 	android:icon
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:7:5-39
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:7:5-39
 	android:allowBackup
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:6:5-31
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:6:5-31
 	android:theme
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:11:5-36
-activity#com.example.spotfind.DetalheEvento
-ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:12:5-56
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:11:5-36
+activity#com.example.spotfind.MainActivity
+ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:12:5-20:16
+	android:screenOrientation
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:14:7-49
+	android:label
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:15:7-29
 	android:name
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:12:15-44
-activity#com.example.spotfind.Implementation.MainActivity
-ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:13:5-19:16
-	android:name
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:13:15-58
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:13:7-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:14:7-18:23
+ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:16:7-19:23
 action#android.intent.action.MAIN
-ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:15:9-61
+ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:17:9-61
 	android:name
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:15:17-58
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:17:17-58
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:17:9-69
+ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:18:9-69
 	android:name
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:17:19-66
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:18:19-66
+activity#com.example.spotfind.DetalhesIngressoClickListener
+ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:21:5-72
+	android:name
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml:21:15-60
 uses-sdk
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\45ae33ec992ed492b98022ef2deb9b21\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\45ae33ec992ed492b98022ef2deb9b21\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\3fd45897b61c6351201600d2505b10a7\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\3fd45897b61c6351201600d2505b10a7\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\6ec8cd8632c1111b5aec246dfc532076\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\6ec8cd8632c1111b5aec246dfc532076\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\d4993dd2f3f86b93ebe35cf42fcc3734\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\d4993dd2f3f86b93ebe35cf42fcc3734\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\7a9d4710979adcc3b11b8e38cd2f1161\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\7a9d4710979adcc3b11b8e38cd2f1161\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\26366c41aacba6ff1ad4d125e10236ec\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\26366c41aacba6ff1ad4d125e10236ec\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\7efc4936e86a561776a41402f3033472\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\7efc4936e86a561776a41402f3033472\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4bbd90bff435ef0cd46cb515f4db1f44\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4bbd90bff435ef0cd46cb515f4db1f44\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4d97972cd17f044f8a179fac89d3c149\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4d97972cd17f044f8a179fac89d3c149\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\d1a29b5413ff2d61cee3714da8db6ae5\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\d1a29b5413ff2d61cee3714da8db6ae5\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\41142495a5966ba92a6731d4aef1443c\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\41142495a5966ba92a6731d4aef1443c\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\64430d16a4450277ee62bed605b8a315\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\64430d16a4450277ee62bed605b8a315\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\9e7dc938f6f2a4babdedd162c0c9e9b7\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\9e7dc938f6f2a4babdedd162c0c9e9b7\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\cf0000d0f1ea44dcfb03d1317c7a0212\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\cf0000d0f1ea44dcfb03d1317c7a0212\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4051633396431ebae157ccc0f31bc717\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\4051633396431ebae157ccc0f31bc717\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\6f63047052c6492a31da55d04081d893\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\6f63047052c6492a31da55d04081d893\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\e2781e84b528fa1ffebd02d49bbbbd13\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\e2781e84b528fa1ffebd02d49bbbbd13\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\192bcc775013de0f9d80fead8e3579bd\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\192bcc775013de0f9d80fead8e3579bd\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\14e0d25ae874d7d96071a72f770780bd\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\14e0d25ae874d7d96071a72f770780bd\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\51cd1e745618f6257cbd75e0f26e1b95\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\51cd1e745618f6257cbd75e0f26e1b95\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\1baaa0ea0144068a9e0ad690c3f89800\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fabiano.dutra\.gradle\caches\transforms-2\files-2.1\1baaa0ea0144068a9e0ad690c3f89800\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\daa47187fb0f0a7c419d1b10e1677cdd\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\daa47187fb0f0a7c419d1b10e1677cdd\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\0554424e228349ffc3db0700d1324aa1\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\0554424e228349ffc3db0700d1324aa1\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\bad233a64070d55cab9a83b26afbf154\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\bad233a64070d55cab9a83b26afbf154\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fabiano\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fabiano.dutra\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fabiano\Desktop\api-spotfind\SpotFind\app\src\main\AndroidManifest.xml

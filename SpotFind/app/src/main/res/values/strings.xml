@@ -2,4 +2,7 @@
   <string name="app_name">SpotFind</string>
   <string name="data_evento">Data do Evento</string>
   <string name="evento_nome">Evento</string>
+  <string name="filmeNome">Filme</string>
+  <string name="estabelecimento">Estabelecimento</string>
+  <string name="quantitidade">Quantidade</string>
 </resources>
