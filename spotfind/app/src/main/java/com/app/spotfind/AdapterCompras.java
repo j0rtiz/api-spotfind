@@ -1,13 +1,12 @@
 package com.app.spotfind;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.app.spotfind.Models.Ingresso;
 
 import java.util.ArrayList;
 
@@ -44,7 +43,7 @@ public class AdapterCompras extends BaseAdapter {
     // aqui e a ligacao entre ingresso e o item_carro
     Ingresso ingresso = lista.get(i);
     view = activity.getLayoutInflater().inflate(R.layout.item_compras, viewGroup, false);
-    TextView idEvento = view.findViewById(R.id.textViewidEvento);
+    TextView idEvento = view.findViewById(R.id.textViewIdEvento);
     TextView nomeEvento = view.findViewById(R.id.textViewNomeEvento);
     TextView valorEvento = view.findViewById(R.id.textViewValorEvento);
 

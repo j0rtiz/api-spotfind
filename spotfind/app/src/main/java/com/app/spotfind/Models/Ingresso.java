@@ -1,4 +1,4 @@
-package com.app.spotfind;
+package com.app.spotfind.Models;
 
 import java.io.Serializable;
 
@@ -68,11 +68,11 @@ public class Ingresso implements Serializable {
     this.local = local;
   }
 
-  public Integer getValor() {
+  public Double getValor() {
     return valor;
   }
 
-  public void setValor(Integer valor) {
+  public void setValor(Double valor) {
     this.valor = valor;
   }
 
@@ -85,6 +85,7 @@ public class Ingresso implements Serializable {
   }
 
   private String titulo, ano, genero, atores, poster, imbId, tipo, local;
-  private Integer valor, id;
+  private Integer id;
+  private Double valor;
 
 }

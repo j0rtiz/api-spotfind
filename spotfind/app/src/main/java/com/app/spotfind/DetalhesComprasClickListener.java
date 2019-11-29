@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 
+import com.app.spotfind.Models.Ingresso;
+
 import java.util.ArrayList;
 
 public class DetalhesComprasClickListener implements AdapterView.OnItemClickListener {

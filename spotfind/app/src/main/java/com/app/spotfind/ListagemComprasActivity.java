@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.app.spotfind.Models.Ingresso;
+
 import java.util.ArrayList;
 
 public class ListagemComprasActivity extends AppCompatActivity {
