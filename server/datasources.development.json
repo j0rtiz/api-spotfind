@@ -1,11 +1,11 @@
 {
   "db": {
-    "host": "ec2-174-129-253-53.compute-1.amazonaws.com",
+    "host": "127.0.0.1",
     "port": "5432",
-    "database": "d28pudd9v4toem",
-    "password": "0229135629c0e4dfee5fc1695f10c275022729070db61d0bd4192c36dd71e992",
+    "database": "spotfind",
+    "password": "postgres",
     "name": "db",
-    "user": "cxcdzjsfhtodnj",
+    "user": "postgres",
     "connector": "postgresql"
   }
 }
