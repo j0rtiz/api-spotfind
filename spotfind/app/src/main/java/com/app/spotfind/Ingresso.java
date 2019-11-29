@@ -1,6 +1,8 @@
 package com.app.spotfind;
 
-public class Ingresso {
+import java.io.Serializable;
+
+public class Ingresso implements Serializable {
 
   public String getTitulo() {
     return titulo;
@@ -82,7 +84,7 @@ public class Ingresso {
     this.id = id;
   }
 
-  String titulo, ano, genero, atores, poster, imbId, tipo, local;
-  Integer valor, id;
+  private String titulo, ano, genero, atores, poster, imbId, tipo, local;
+  private Integer valor, id;
 
 }
