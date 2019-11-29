@@ -4,4 +4,10 @@
   <string name="id_evento">ID</string>
   <string name="nome_carro">Evento:</string>
   <string name="valor_compra">Valor:</string>
+  <string name="titulo">Titulo</string>
+  <string name="ano_filme">Ano</string>
+  <string name="atores">Atores</string>
+  <string name="genero">Genero</string>
+  <string name="imbbId">IMDB</string>
+  <string name="local">Local</string>
 </resources>

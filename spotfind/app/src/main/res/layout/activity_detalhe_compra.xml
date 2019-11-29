@@ -6,80 +6,123 @@
   android:layout_height="match_parent"
   tools:context=".DetalheCompraActivity">
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+  <TableLayout
+    android:layout_width="394dp"
+    android:layout_height="296dp"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp">
 
-    <TextView
-      android:id="@+id/textViewTitulo"
-      android:layout_width="match_parent"
+    <TableRow>
+
+      <TextView
+        android:layout_width="96dp"
+        android:padding="3dip"
+        android:text="@string/titulo"
+        android:textStyle="bold" />
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="TextView"
+        android:textAlignment="center" />
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="@string/ano_filme"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="TextView"
+        android:textAlignment="center" />
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="@string/genero"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="TextView"
+        android:textAlignment="center" />
+    </TableRow>
+
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="@string/atores"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="TextView"
+        android:textAlignment="center" />
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="@string/imbbId"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="TextView"
+        android:textAlignment="center" />
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="@string/local"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="TextView"
+        android:textAlignment="center" />
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="@string/valor_compra"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="TextView"
+        android:textAlignment="center" />
+    </TableRow>
+  </TableLayout>
+
+  <FrameLayout
+    android:layout_width="395dp"
+    android:layout_height="414dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="309dp">
+
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <TextView
-      android:id="@+id/textViewId"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <TextView
-      android:id="@+id/textViewValor"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <TextView
-      android:id="@+id/textViewAno"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <TextView
-      android:id="@+id/textViewGenero"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <TextView
-      android:id="@+id/textViewAtores"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <!--<TextView-->
-      <!--android:id="@+id/textViewAtores"-->
-      <!--android:layout_width="match_parent"-->
-      <!--android:layout_height="wrap_content"-->
-      <!--android:text="TextView" />-->
-
-    <TextView
-      android:id="@+id/textViewImbdId"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <TextView
-      android:id="@+id/textViewTipo"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <TextView
-      android:id="@+id/textViewLocal"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="TextView" />
-
-    <Button
-      android:id="@+id/button5"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20sp"
-      android:onClick="deletarCarro"
-      android:text="@string/deletar_compra" />
-  </LinearLayout>
-
+      tools:srcCompat="@tools:sample/backgrounds/scenic" />
+  </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
