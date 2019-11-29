@@ -5,7 +5,10 @@
 
   <dist:module dist:instant="true" />
 
+<<<<<<< HEAD
   <uses-permission android:name="android.permission.INTERNET" />
+=======
+>>>>>>> 73dbc635ece7c359c1720c9f93c30b134c5c3b47
   <application
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
@@ -13,8 +16,15 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
+<<<<<<< HEAD
     <activity android:name=".MainActivity"></activity>
     <activity android:name=".LoginActivity">
+=======
+    <activity android:name=".DetalheCompraActivity"></activity>
+    <activity android:name=".AdapterCompras" />
+    <activity android:name=".ListagemComprasActivity" />
+    <activity android:name=".MainActivity">
+>>>>>>> 73dbc635ece7c359c1720c9f93c30b134c5c3b47
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 

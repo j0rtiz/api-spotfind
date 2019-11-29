@@ -7,7 +7,7 @@
   },
   "properties": {
     "imdbId": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "valor": {
@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "usuario": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
