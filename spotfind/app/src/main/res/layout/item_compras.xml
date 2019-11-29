@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
 
   <TextView
     android:id="@+id/textView01"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:text="@string/id_evento" />
+    android:text="@string/id_evento"
+    android:textStyle="bold" />
 
   <TextView
     android:id="@+id/textViewidEvento"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_weight="1"
     android:text="TextView" />
 
   <TextView
@@ -22,7 +22,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    android:text="@string/nome_carro" />
+    android:text="@string/nome_carro"
+    android:textStyle="bold" />
 
   <TextView
     android:id="@+id/textViewNomeEvento"
@@ -36,7 +37,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    android:text="@string/valor_compra" />
+    android:text="@string/valor_compra"
+    android:textStyle="bold" />
 
   <TextView
     android:id="@+id/textViewValorEvento"
@@ -45,4 +47,9 @@
     android:layout_weight="1"
     android:text="TextView" />
 
+  <View
+    android:id="@+id/divider"
+    android:layout_width="match_parent"
+    android:layout_height="4dp"
+    android:background="@android:color/background_dark" />
 </LinearLayout>
