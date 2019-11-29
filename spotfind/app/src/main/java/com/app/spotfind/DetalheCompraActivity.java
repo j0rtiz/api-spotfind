@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.app.spotfind.Models.Ingresso;
+
 public class DetalheCompraActivity extends AppCompatActivity {
 
   // variaveis de classe
@@ -15,23 +17,24 @@ public class DetalheCompraActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_detalhe_compra);
+    setContentView(R.layout.activity_listagem_compras);
     ingresso = (Ingresso)getIntent().getExtras().get("ingresso");
 
-//    TextView nomeCarro = findViewById(R.id.textViewNomeCarro);
-//    TextView corCarro = findViewById(R.id.textViewCorCarro);
-//    TextView marcaCarro = findViewById(R.id.textViewMarcaCarro);
-//    TextView placaCarro = findViewById(R.id.textViewPlacaCarro);
-//
-//    nomeCarro.setText(ingresso.getTitulo());
-//    corCarro.setText(ingresso.cor);
-//    marcaCarro.setText(ingresso.marca);
-//    placaCarro.setText(ingresso.placa);
+    TextView titulo = findViewById(R.id.textViewDetalheTitulo);
+    TextView ano = findViewById(R.id.textViewDetalheAno);
+    TextView genero = findViewById(R.id.textViewDetalheGenero);
+    TextView atores = findViewById(R.id.textViewDetalheAtores);
+    TextView imdb = findViewById(R.id.textViewDetalheImdbId);
+    TextView local = findViewById(R.id.textViewDetalheLocal);
+    TextView valor = findViewById(R.id.textViewDetalheValor);
 
-//    bancoDados = new BancoDados(this);
-
-
-
+    titulo.setText(ingresso.getTitulo());
+    ano.setText(ingresso.getAno());
+    genero.setText(ingresso.getGenero());
+    atores.setText(ingresso.getAtores());
+    imdb.setText(ingresso.getImbId());
+    local.setText(ingresso.getLocal());
+    valor.setText(ingresso.getValor());
 
   }
 
