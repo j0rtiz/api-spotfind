@@ -18,11 +18,11 @@ public class ListagemComprasActivity extends AppCompatActivity {
     setContentView(R.layout.activity_listagem_compras);
 
 
-    listaCompras = (ArrayList<Ingresso>) getIntent().getExtras().get("lista");
+//    listaCompras = (ArrayList<Ingresso>) getIntent().getExtras().get("lista");
 
     AdapterCompras adapterCompras = new AdapterCompras(listaCompras, this);
     ListView listView = findViewById(R.id.listViewListagemCompras);
-    listView.setAdapter(adapterCompras);
+//    listView.setAdapter(adapterCompras);
     listView.setOnItemClickListener(new
       DetalhesComprasClickListener(listaCompras, this));
   }
@@ -36,7 +36,7 @@ public class ListagemComprasActivity extends AppCompatActivity {
 
     AdapterCompras adapterCompras = new AdapterCompras(listaCompras, this);
     ListView listView = findViewById(R.id.listViewListagemCompras);
-    listView.setAdapter(adapterCompras);
+//    listView.setAdapter(adapterCompras);
     listView.setOnItemClickListener(new
       DetalhesComprasClickListener(listaCompras, this));
 

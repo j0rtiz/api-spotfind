@@ -26,7 +26,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
     TextView atores = findViewById(R.id.textViewDetalheAtores);
     TextView imdb = findViewById(R.id.textViewDetalheImdbId);
     TextView local = findViewById(R.id.textViewDetalheLocal);
-    TextView valor = findViewById(R.id.textViewDetalheValor);
+  //  TextView valor = findViewById(R.id.textViewDetalheValor);
 
     titulo.setText(ingresso.getTitulo());
     ano.setText(ingresso.getAno());
@@ -34,7 +34,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
     atores.setText(ingresso.getAtores());
     imdb.setText(ingresso.getImbId());
     local.setText(ingresso.getLocal());
-    valor.setText(ingresso.getValor());
+  //  valor.setText(ingresso.getValor());
 
   }
 
