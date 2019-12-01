@@ -2,7 +2,7 @@ package com.app.spotfind.Models;
 
 import java.io.Serializable;
 
-public class Ingresso implements Serializable {
+public class Filme implements Serializable {
 
   public String getTitulo() {
     return titulo;

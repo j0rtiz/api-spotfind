@@ -6,19 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.app.spotfind.Models.Ingresso;
+import com.app.spotfind.Models.Compras;
+import com.app.spotfind.Models.Filme;
 
 public class DetalheCompraActivity extends AppCompatActivity {
 
   // variaveis de classe
-//  BancoDados bancoDados ;
-  Ingresso ingresso;
+  Compras compras;
+  Filme filme;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_listagem_compras);
-    ingresso = (Ingresso)getIntent().getExtras().get("ingresso");
+    compras = (Compras)getIntent().getExtras().get("compras");
+
+    int idFilme =  compras.getId();
+
+
 
     TextView titulo = findViewById(R.id.textViewDetalheTitulo);
     TextView ano = findViewById(R.id.textViewDetalheAno);
@@ -26,21 +31,21 @@ public class DetalheCompraActivity extends AppCompatActivity {
     TextView atores = findViewById(R.id.textViewDetalheAtores);
     TextView imdb = findViewById(R.id.textViewDetalheImdbId);
     TextView local = findViewById(R.id.textViewDetalheLocal);
-  //  TextView valor = findViewById(R.id.textViewDetalheValor);
+    TextView valor = findViewById(R.id.textViewDetalheValor);
 
-    titulo.setText(ingresso.getTitulo());
-    ano.setText(ingresso.getAno());
-    genero.setText(ingresso.getGenero());
-    atores.setText(ingresso.getAtores());
-    imdb.setText(ingresso.getImbId());
-    local.setText(ingresso.getLocal());
-  //  valor.setText(ingresso.getValor());
+    titulo.setText(filme.getTitulo());
+    ano.setText(filme.getAno());
+    genero.setText(filme.getGenero());
+    atores.setText(filme.getAtores());
+    imdb.setText(filme.getImbId());
+    local.setText(filme.getLocal());
+    valor.setText(filme.getValor().toString());
 
   }
 
   public void deletarCarro(View view) {
 
-//    bancoDados.deletaCarro(ingresso.id);
+//    bancoDados.deletaCarro(filme.id);
     finish();
   }
 }
