@@ -6,16 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 
-import com.app.spotfind.Models.Ingresso;
+import com.app.spotfind.Models.Compras;
 
 import java.util.ArrayList;
 
 public class DetalhesComprasClickListener implements AdapterView.OnItemClickListener {
 
-  ArrayList<Ingresso> minhaLista;
+  ArrayList<Compras> minhaLista;
   Activity activity;
 
-  public DetalhesComprasClickListener(ArrayList<Ingresso> lista,
+  public DetalhesComprasClickListener(ArrayList<Compras> lista,
                                     Activity activity){
     minhaLista = lista;
     this.activity = activity;
@@ -25,15 +25,14 @@ public class DetalhesComprasClickListener implements AdapterView.OnItemClickList
   public void onItemClick(AdapterView<?> adapterView,
                           View view, int i, long l) {
     // aqui eu vou abrir um activity, com informacoes
-    // detalhadas do ingresso.
-    Ingresso ingresso = minhaLista.get(i);
+    // detalhadas do compras.
+    Compras compras = minhaLista.get(i);
     Intent intent = new Intent(activity,
       DetalheCompraActivity.class);
 
     Bundle bundle = new Bundle();
-    bundle.putSerializable("ingresso",ingresso);
+    bundle.putSerializable("compras",compras);
     intent.putExtras(bundle);
     activity.startActivity(intent);
-
   }
 }

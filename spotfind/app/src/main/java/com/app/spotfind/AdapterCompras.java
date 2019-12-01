@@ -5,15 +5,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import com.app.spotfind.Models.Ingresso;
+
+import com.app.spotfind.Models.Compras;
+import com.app.spotfind.Models.Filme;
+
 import java.util.ArrayList;
 
 public class AdapterCompras extends BaseAdapter {
 
-  ArrayList<Ingresso> lista;
+  ArrayList<Compras> lista;
   Activity activity;
 
-  public AdapterCompras(ArrayList<Ingresso> listaCompras, Activity activity) {
+  public AdapterCompras(ArrayList<Compras> listaCompras, Activity activity) {
     this.lista = listaCompras;
     this.activity = activity;
   }
@@ -38,17 +41,17 @@ public class AdapterCompras extends BaseAdapter {
 
   @Override
   public View getView(int i, View view, ViewGroup viewGroup) {
-    // aqui e a ligacao entre ingresso e o item_carro
-    Ingresso ingresso = lista.get(i);
-   // view = activity.getLayoutInflater().inflate(R.layout.item_compras, viewGroup, false);
+    // aqui e a ligacao entre compras e o item_carro
+    Compras compras = lista.get(i);
+    view = activity.getLayoutInflater().inflate(R.layout.item_compras, viewGroup, false);
     TextView idEvento = view.findViewById(R.id.textViewIdEvento);
     TextView nomeEvento = view.findViewById(R.id.textViewNomeEvento);
     TextView valorEvento = view.findViewById(R.id.textViewValorEvento);
 
-    Ingresso ing = new Ingresso();
+    Filme ing = new Filme();
     idEvento.setText(ing.getId()); //id sessao
     nomeEvento.setText(ing.getTitulo());
-  //  valorEvento.setText(ing.getValor());
+    valorEvento.setText(ing.getValor().toString());
 
     return view;
   }

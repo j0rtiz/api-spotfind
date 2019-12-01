@@ -2,7 +2,9 @@ package com.app.spotfind.Models;
 
 import android.content.Intent;
 
-public class Compras {
+import java.io.Serializable;
+
+public class Compras implements Serializable {
 
     String imbdId;
     Double valor;
