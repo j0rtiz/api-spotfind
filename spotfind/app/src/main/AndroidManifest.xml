@@ -1,29 +1,32 @@
-@ -1,24 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>	<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"	<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:dist="http://schemas.android.com/apk/distribution"	  xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.app.spotfind">	  package="com.app.spotfind">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dist="http://schemas.android.com/apk/distribution"
+  package="com.app.spotfind">
 
+  <dist:module dist:instant="true" />
 
-    <dist:module dist:instant="true" />	  <dist:module dist:instant="true" />
+  <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <application	  <uses-permission android:name="android.permission.INTERNET" />
-        android:allowBackup="true"	  <application
-        android:icon="@mipmap/ic_launcher"	    android:allowBackup="true"
-        android:label="@string/app_name"	    android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"	    android:label="@string/app_name"
-        android:supportsRtl="true"	    android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/AppTheme">	    android:supportsRtl="true"
-        <activity android:name=".MainActivity">	    android:theme="@style/AppTheme">
-            <intent-filter>	    <activity android:name=".MainActivity"></activity>
-                <action android:name="android.intent.action.MAIN" />	    <activity android:name=".LoginActivity">
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+
+    <activity android:name=".MainActivity"></activity>
+    <activity android:name=".LoginActivity">
+    <activity android:name=".DetalheCompraActivity"></activity>
+    <activity android:name=".AdapterCompras" />
+    <activity android:name=".ListagemComprasActivity" />
 
       <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER" />	        <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>	        <category android:name="android.intent.category.LAUNCHER" />
-    </application>	      </intent-filter>
+        <action android:name="android.intent.action.MAIN" />
 
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
     </activity>
+  </application>
+
 </manifest>
