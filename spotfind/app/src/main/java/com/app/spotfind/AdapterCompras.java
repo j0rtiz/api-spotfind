@@ -43,7 +43,7 @@ public class AdapterCompras extends BaseAdapter {
   public View getView(int i, View view, ViewGroup viewGroup) {
     // aqui e a ligacao entre compras e o item_carro
     Compras compras = lista.get(i);
-   // view = activity.getLayoutInflater().inflate(R.layout.item_compras, viewGroup, false);
+    view = activity.getLayoutInflater().inflate(R.layout.item_compras, viewGroup, false);
     TextView idEvento = view.findViewById(R.id.textViewIdEvento);
     TextView nomeEvento = view.findViewById(R.id.textViewNomeEvento);
     TextView valorEvento = view.findViewById(R.id.textViewValorEvento);
@@ -51,7 +51,7 @@ public class AdapterCompras extends BaseAdapter {
     Filme ing = new Filme();
     idEvento.setText(ing.getId()); //id sessao
     nomeEvento.setText(ing.getTitulo());
-  //  valorEvento.setText(ing.getValor());
+    valorEvento.setText(ing.getValor().toString());
 
     return view;
   }
