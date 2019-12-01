@@ -17,6 +17,8 @@ public class ListagemComprasActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_listagem_compras);
 
+    String usuario = (String)
+      getIntent().getExtras().get("usuarioID"); //VEM DA ACTIVITY!
 
 //    listaCompras = (ArrayList<Ingresso>) getIntent().getExtras().get("lista");
 
