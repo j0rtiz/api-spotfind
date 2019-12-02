@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
         Fresco.initialize(this);
         setContentView(R.layout.activity_main);
 
-        final SimpleDraweeView imgPoster = findViewById(R.id.imgPoster);
+       // final SimpleDraweeView imgPoster = findViewById(R.id.imgPoster);
         final TextView txtTitulo = findViewById(R.id.txtTitulo);
         final TextView txtAno = findViewById(R.id.txtAno);
         final TextView txtGenero = findViewById(R.id.txtGenero);
         final TextView txtAtores = findViewById(R.id.txtAtores);
         final TextView txtImdbId = findViewById(R.id.txtImdbId);
-        final TextView txtTipo = findViewById(R.id.txtTipo);
+        //final TextView txtTipo = findViewById(R.id.txtTipo);
         final TextView txtLocal = findViewById(R.id.txtLocal);
         final TextView txtValor = findViewById(R.id.txtValor);
 
@@ -39,16 +39,16 @@ public class MainActivity extends AppCompatActivity {
                 if (response.body() != null) {
                     for (Sessoes sessoes : response.body()) {
                         Uri uri = Uri.parse(sessoes.getPoster());
-                        imgPoster.setImageURI(uri);
+                     //   imgPoster.setImageURI(uri);
                         txtTitulo.setText("Titulo: " + sessoes.getTitulo());
                         txtAno.setText("Ano: " + sessoes.getAno());
                         txtGenero.setText("Genero: " + sessoes.getGenero());
                         txtAtores.setText("Atores: " + sessoes.getAtores());
                         txtImdbId.setText("Codigo IMDB: " + sessoes.getImdbId());
                         if (sessoes.getTipo().equals("movie")) {
-                            txtTipo.setText("Tipo: Filme");
+                         //   txtTipo.setText("Tipo: Filme");
                         } else {
-                            txtTipo.setText("Tipo: " + sessoes.getTipo());
+                          //  txtTipo.setText("Tipo: " + sessoes.getTipo());
                         }
                         txtLocal.setText("Local: " + sessoes.getLocal());
                         txtValor.setText("Valor: R$ " + sessoes.getValor() + ",00");

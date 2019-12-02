@@ -25,13 +25,13 @@ public class DetalheCompraActivity extends AppCompatActivity {
 
 
 
-    TextView titulo = findViewById(R.id.textViewDetalheTitulo);
-    TextView ano = findViewById(R.id.textViewDetalheAno);
-    TextView genero = findViewById(R.id.textViewDetalheGenero);
-    TextView atores = findViewById(R.id.textViewDetalheAtores);
-    TextView imdb = findViewById(R.id.textViewDetalheImdbId);
-    TextView local = findViewById(R.id.textViewDetalheLocal);
-    TextView valor = findViewById(R.id.textViewDetalheValor);
+    TextView titulo = findViewById(R.id.txtTitulo);
+    TextView ano = findViewById(R.id.txtAno);
+    TextView genero = findViewById(R.id.txtGenero);
+    TextView atores = findViewById(R.id.txtAtores);
+    TextView imdb = findViewById(R.id.txtImdbId);
+    TextView local = findViewById(R.id.txtLocal);
+    TextView valor = findViewById(R.id.txtValor);
 
     titulo.setText(filme.getTitulo());
     ano.setText(filme.getAno());
