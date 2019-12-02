@@ -20,7 +20,4 @@ public interface SessoesService {
 
   @GET("link-para-filtro-de-filme")
   Call<List<Compras>> getFilmePorImdbId(String imbdId);
-
-  @POST("Usuarios/login")
-  Call<List<Usuario>> getUsuario(@Body Usuario usuario);
 }

@@ -13,5 +13,5 @@ import retrofit2.http.POST;
 
 public interface UsuariosService {
   @POST("Usuarios/login")
-  Call<List<Usuario>> getUsuario(@Body Usuario usuario);
+  Call<Usuario> loginUsuario(@Body Usuario usuario);
 }

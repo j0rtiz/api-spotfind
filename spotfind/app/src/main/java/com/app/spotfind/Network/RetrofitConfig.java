@@ -18,7 +18,7 @@ public class RetrofitConfig {
     return this.retrofit.create(SessoesService.class);
   }
 
-  public UsuariosService getUsuariosService() {
+  public UsuariosService loginUsuarioService() {
     return this.retrofit.create(UsuariosService.class);
   }
 }
