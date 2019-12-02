@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView userEmail = findViewById(R.id.textEmail);
     TextView password = findViewById(R.id.textSenha);
 
-    Usuario usuario = new Usuario();
+    final Usuario usuario = new Usuario();
     usuario.setEmail(userEmail.getText().toString());
     usuario.setPassword(password.getText().toString());
 
@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
     call.enqueue(new Callback<List<Usuario>>() {
       @Override
       public void onResponse(Call<List<Usuario>> call, Response<List<Usuario>> response) {
-        System.out.println(response.body());
+        
         goToMainActivity();
       }
 
