@@ -1,6 +1,7 @@
 package com.app.spotfind.Network;
 
 import com.app.spotfind.Models.Compras;
+import com.app.spotfind.Models.Filme;
 import com.app.spotfind.Models.Sessoes;
 
 import java.util.List;
@@ -15,6 +16,6 @@ public interface SessoesService {
     @GET("Compras?filter=%7B\"where\"%3A%7B\"usuarioId\"%3A{usuarioId}%7D%7D")
     Call<List<Compras>> getComprasPorUsuarioId(int usuarioId);
 
-    @GET("link-para-filtro-de-filme")
-    Call<List<Compras>> getFilmePorImdbId(String imbdId);
+    @GET("Sessoes?filter=%7B%22where%22%3A%7B%22imdbId%22%3A%22{imdbId}%22%7D%7D")
+    Call<List<Filme>> getFilmePorImdbId(String imbdId);
 }

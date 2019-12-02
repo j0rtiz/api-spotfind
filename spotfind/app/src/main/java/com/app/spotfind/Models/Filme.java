@@ -44,12 +44,12 @@ public class Filme implements Serializable {
     this.poster = poster;
   }
 
-  public String getImbId() {
-    return imbId;
+  public String getImdbId() {
+    return imdbId;
   }
 
-  public void setImbId(String imbId) {
-    this.imbId = imbId;
+  public void setImdbId(String imbId) {
+    this.imdbId = imbId;
   }
 
   public String getTipo() {
@@ -84,7 +84,7 @@ public class Filme implements Serializable {
     this.id = id;
   }
 
-  private String titulo, ano, genero, atores, poster, imbId, tipo, local;
+  private String titulo, ano, genero, atores, poster, imdbId, tipo, local;
   private Integer id;
   private Double valor;
 
