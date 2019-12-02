@@ -5,20 +5,20 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitConfig {
 
-  private final Retrofit retrofit;
+    private final Retrofit retrofit;
 
-  public RetrofitConfig() {
-    this.retrofit = new Retrofit.Builder()
-      .baseUrl("https://api-spotfind.herokuapp.com/api/")
-      .addConverterFactory(GsonConverterFactory.create())
-      .build();
-  }
+    public RetrofitConfig() {
+        this.retrofit = new Retrofit.Builder()
+                .baseUrl("https://api-spotfind.herokuapp.com/api/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+    }
 
-  public SessoesService getSessoesService() {
-    return this.retrofit.create(SessoesService.class);
-  }
+    public SessoesService getSessoesService() {
+        return this.retrofit.create(SessoesService.class);
+    }
 
-  public UsuariosService loginUsuarioService() {
-    return this.retrofit.create(UsuariosService.class);
-  }
+    public UsuariosService loginUsuarioService() {
+        return this.retrofit.create(UsuariosService.class);
+    }
 }

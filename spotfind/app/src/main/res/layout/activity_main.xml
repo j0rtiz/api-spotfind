@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
@@ -15,7 +16,7 @@
 
     <com.facebook.drawee.view.SimpleDraweeView
       android:id="@+id/imgPoster"
-      android:layout_width="152dp"
+      android:layout_width="300px"
       android:layout_height="445px" />
 
     <TextView
@@ -66,11 +67,6 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:textStyle="bold" />
-
-    <ListView
-      android:id="@+id/listView"
-      android:layout_width="521dp"
-      android:layout_height="match_parent"/>
 
   </LinearLayout>
 

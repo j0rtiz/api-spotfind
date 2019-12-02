@@ -6,9 +6,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.app.spotfind.Models.Usuario;
 import com.app.spotfind.Network.RetrofitConfig;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -60,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(mainActivity, null);
     }
 
-    public void showError () {
+    public void showError() {
         Toast.makeText(this, R.string.error_user_passwd, Toast.LENGTH_LONG).show();
     }
 }
