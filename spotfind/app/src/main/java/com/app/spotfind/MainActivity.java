@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Fresco.initialize(this);
         setContentView(R.layout.activity_main);
 
-       // final SimpleDraweeView imgPoster = findViewById(R.id.imgPoster);
+        final SimpleDraweeView imgPoster = findViewById(R.id.imgPoster);
         final TextView txtTitulo = findViewById(R.id.txtTitulo);
         final TextView txtAno = findViewById(R.id.txtAno);
         final TextView txtGenero = findViewById(R.id.txtGenero);
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<List<Sessoes>>() {
             @Override
             public void onResponse(Call<List<Sessoes>> call, Response<List<Sessoes>> response) {
+              System.out.println(response.body());
                 if (response.body() != null) {
                     for (Sessoes sessoes : response.body()) {
                         Uri uri = Uri.parse(sessoes.getPoster());

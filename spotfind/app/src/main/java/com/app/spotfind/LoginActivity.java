@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
       @Override
       public void onResponse(Call<List<Usuario>> call, Response<List<Usuario>> response) {
         System.out.println(response.body());
+        goToMainActivity();
       }
 
       @Override
@@ -61,5 +62,9 @@ public class LoginActivity extends AppCompatActivity {
     });
   }
 
+  public void goToMainActivity() {
+    Intent mainActivity = new Intent(this, MainActivity.class);
+    startActivity(mainActivity, null);
+  }
 
 }
