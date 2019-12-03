@@ -3,6 +3,7 @@ package com.app.spotfind;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
 import com.app.spotfind.Models.Compras;
@@ -26,31 +27,37 @@ public class ListagemComprasActivity extends AppCompatActivity {
     int usuario = (int)
       getIntent().getExtras().get("usuario");
 
-//    listaCompras = (ArrayList<Compras>) getIntent().getExtras().get("lista");
+    String u = Integer.toString(usuario);
 
-    String request = "%7B/where/%3A%7B/usuarioId/%3A"+usuario+"%7D%7D";
+    String request = "%7B/where/%3A%7B/usuarioId/%3A"+u+"%7D%7D";
 
-    Call<List<Compras>> call = new RetrofitConfig().getComprasPorId().getComprasPorUsuarioId(request);
+
+//    METODO PARA CHAMAR AS COMPRAS POR USUARIO. como nao funcionou, coloquei um metodo pra trazer todas as compras para testar
+//    Call<List<Compras>> call = new RetrofitConfig().getComprasService().getComprasPorUsuarioId(request);
+    Call<List<Compras>> call = new RetrofitConfig().getComprasService().getTodasCompras();
+
     call.enqueue(new Callback<List<Compras>>() {
       @Override
       public void onResponse(Call<List<Compras>> call, Response<List<Compras>> response) {
         if (response.body() != null) {
+          System.out.println(response.body());
           for (Compras retCompras : response.body()) {
-            System.out.print(retCompras);
+            System.out.print("RETORNOU = " + retCompras.getImdbId());
 
-            comprasAct.setId(retCompras.getId());
-            comprasAct.setImbdId(retCompras.getImbdId());
-            comprasAct.setValor(retCompras.getValor());
-            comprasAct.setUsuarioId(retCompras.getUsuarioId());
+//            comprasAct.setId(retCompras.getId());
+//            comprasAct.setImbdId(retCompras.getImbdId());
+//            comprasAct.setValor(retCompras.getValor());
+//            comprasAct.setUsuarioId(retCompras.getUsuarioId());
 
-            listaCompras.add(comprasAct);
+//            listaCompras.add(comprasAct);
+            listaCompras.add(retCompras);
           }
         }
       }
 
       @Override
       public void onFailure(Call<List<Compras>> call, Throwable t) {
-        System.out.print(t.toString());
+        Log.e("Compras: ", "Erro: " + t.getMessage());
       }
     });
 
@@ -59,7 +66,6 @@ public class ListagemComprasActivity extends AppCompatActivity {
     listView.setAdapter(adapterCompras);
     listView.setOnItemClickListener(new
       DetalhesComprasClickListener(listaCompras,this));
-
 
   }
 

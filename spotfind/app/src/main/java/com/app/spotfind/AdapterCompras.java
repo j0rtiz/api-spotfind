@@ -48,10 +48,11 @@ public class AdapterCompras extends BaseAdapter {
     TextView nomeEvento = view.findViewById(R.id.textViewNomeEvento);
     TextView valorEvento = view.findViewById(R.id.textViewValorEvento);
 
-    Sessoes ing = new Sessoes();
-    idEvento.setText(ing.getId()); //id sessao
-    nomeEvento.setText(ing.getTitulo());
-    valorEvento.setText(ing.getValor().toString());
+
+
+    idEvento.setText(compras.getId()); //id sessao
+//    nomeEvento.setText(compras.getTitulo());
+//    valorEvento.setText(compras.getValor().toString());
 
     return view;
   }

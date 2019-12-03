@@ -22,7 +22,7 @@ public class RetrofitConfig {
         return this.retrofit.create(UsuariosService.class);
     }
 
-    public ComprasService getComprasPorId() {
+    public ComprasService getComprasService() {
     return this.retrofit.create(ComprasService.class);
   }
 }

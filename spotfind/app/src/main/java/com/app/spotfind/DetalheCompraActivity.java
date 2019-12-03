@@ -33,7 +33,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
     setContentView(R.layout.activity_listagem_compras);
     compras = (Compras)getIntent().getExtras().get("compras");
 
-    String idFilme =  compras.getImbdId();
+    String idFilme =  compras.getImdbId();
 
     TextView titulo = findViewById(R.id.txtTitulo);
     TextView ano = findViewById(R.id.txtAno);

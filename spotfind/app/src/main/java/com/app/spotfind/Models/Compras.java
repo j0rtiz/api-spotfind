@@ -7,41 +7,42 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 public class Compras implements Serializable {
+  String imdbId;
+  String valor;
+  int id;
 
-    String imbdId;
-    Integer id, usuarioId, valor;
-
-
-  public String getImbdId() {
-    return imbdId;
+  public String getImdbId() {
+    return imdbId;
   }
 
-  public void setImbdId(String imbdId) {
-    this.imbdId = imbdId;
+  public void setImdbId(String imdbId) {
+    this.imdbId = imdbId;
   }
 
-  public Integer getValor() {
+  public String getValor() {
     return valor;
   }
 
-  public void setValor(Integer valor) {
+  public void setValor(String valor) {
     this.valor = valor;
   }
 
-  public Integer getId() {
+  public int getId() {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(int id) {
     this.id = id;
   }
 
-  public Integer getUsuarioId() {
+  public String getUsuarioId() {
     return usuarioId;
   }
 
-  public void setUsuarioId(Integer usuarioId) {
+  public void setUsuarioId(String usuarioId) {
     this.usuarioId = usuarioId;
   }
+
+  String usuarioId;
 
 }
