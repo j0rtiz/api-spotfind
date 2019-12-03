@@ -7,7 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.app.spotfind.Models.Compras;
-import com.app.spotfind.Models.Filme;
+import com.app.spotfind.Models.Sessoes;
 
 import java.util.ArrayList;
 
@@ -48,7 +48,7 @@ public class AdapterCompras extends BaseAdapter {
     TextView nomeEvento = view.findViewById(R.id.textViewNomeEvento);
     TextView valorEvento = view.findViewById(R.id.textViewValorEvento);
 
-    Filme ing = new Filme();
+    Sessoes ing = new Sessoes();
     idEvento.setText(ing.getId()); //id sessao
     nomeEvento.setText(ing.getTitulo());
     valorEvento.setText(ing.getValor().toString());

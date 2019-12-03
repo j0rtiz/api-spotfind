@@ -1,6 +1,8 @@
 package com.app.spotfind.Models;
 
-public class Sessoes {
+import java.io.Serializable;
+
+public class Sessoes implements Serializable {
     private String titulo;
     private String ano;
     private String genero;

@@ -7,19 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.app.spotfind.Models.Compras;
-import com.app.spotfind.Models.Filme;
 import com.app.spotfind.Models.Sessoes;
 import com.app.spotfind.Network.RetrofitConfig;
 import com.facebook.drawee.backends.pipeline.Fresco;
-import com.facebook.drawee.view.SimpleDraweeView;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executors;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -29,7 +23,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
 
   // variaveis de classe
   Compras compras;
-  Filme filme;
+  Sessoes filme;
   Uri uri;
 
   @Override
@@ -50,11 +44,11 @@ public class DetalheCompraActivity extends AppCompatActivity {
     TextView valor = findViewById(R.id.txtValor);
     final ImageView imgPoster = findViewById(R.id.imageViewCapa);
 
-    Call<List<Filme>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(idFilme);
-    call.enqueue(new Callback<List<Filme>>() {
+    Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(idFilme);
+    call.enqueue(new Callback<List<Sessoes>>() {
       @Override
-      public void onResponse(Call<List<Filme>> call, Response<List<Filme>> response) {
-        for (Filme retFilme : response.body()) {
+      public void onResponse(Call<List<Sessoes>> call, Response<List<Sessoes>> response) {
+        for (Sessoes retFilme : response.body()) {
           System.out.print(retFilme);
           filme.setTitulo(retFilme.getTitulo());
           filme.setAno(retFilme.getAno());
@@ -68,7 +62,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
       }
 
       @Override
-      public void onFailure(Call<List<Filme>> call, Throwable t) {
+      public void onFailure(Call<List<Sessoes>> call, Throwable t) {
         System.out.print(t.toString());
       }
     });

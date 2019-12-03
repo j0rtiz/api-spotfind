@@ -64,9 +64,9 @@ public class ListagemComprasActivity extends AppCompatActivity {
     super.onResume();
 //    listaCompras = banco.buscaCarros();
 
-    AdapterCompras adapterCarro = new AdapterCompras(listaCompras,this);
+    AdapterCompras adapterCompras = new AdapterCompras(listaCompras,this);
     ListView listView = findViewById(R.id.listViewListagemCompras);
-    listView.setAdapter(adapterCarro);
+    listView.setAdapter(adapterCompras);
     listView.setOnItemClickListener(new
       DetalhesComprasClickListener(listaCompras,this));
 

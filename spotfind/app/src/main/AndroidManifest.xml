@@ -14,7 +14,7 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-
+    <activity android:name=".ListagemFilmeActivity"></activity>
     <activity android:name=".LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,10 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".MainActivity"></activity>
-    <activity android:name=".DetalheCompraActivity"></activity>
-    <activity android:name=".AdapterCompras"></activity>
-    <activity android:name=".ListagemComprasActivity"></activity>
+    <activity android:name=".MainActivity" />
+    <activity android:name=".DetalheCompraActivity" />
+    <activity android:name=".AdapterCompras" />
+    <activity android:name=".ListagemComprasActivity" />
   </application>
 
 </manifest>
