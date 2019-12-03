@@ -1,5 +1,9 @@
 package com.app.spotfind.Models;
 
+import android.net.Uri;
+
+import com.facebook.drawee.view.SimpleDraweeView;
+
 import java.io.Serializable;
 
 public class Sessoes implements Serializable {
@@ -14,7 +18,17 @@ public class Sessoes implements Serializable {
     private String valor;
     private int id;
 
-    public String getTitulo() {
+  public Uri getImgPoster() {
+    return imgPoster;
+  }
+
+  public void setImgPoster(Uri imgPoster) {
+    this.imgPoster = imgPoster;
+  }
+
+  private Uri imgPoster;
+
+  public String getTitulo() {
         return titulo;
     }
 
