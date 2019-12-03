@@ -11,4 +11,6 @@
   <string name="imbbId">IMDB</string>
   <string name="local">Local</string>
   <string name="error_user_passwd">Usuario / senha invalido</string>
+  <string name="botao_compras">Compras do Usuário</string>
+  <string name="lista_filmes_botao">Filmes Disponíveis</string>
 </resources>

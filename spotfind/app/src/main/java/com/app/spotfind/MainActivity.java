@@ -1,8 +1,10 @@
 package com.app.spotfind;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,11 +22,15 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int usuarioId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fresco.initialize(this);
         setContentView(R.layout.activity_main);
+
+//        usuarioId = 1; //colocar aqui id do usuario para eu filtrar as compras
 
         final SimpleDraweeView imgPoster = findViewById(R.id.imgPoster);
         final TextView txtTitulo = findViewById(R.id.txtTitulo);
@@ -67,4 +73,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+  public void comprasListagem(View view) {
+    Intent intent = new Intent(this,ListagemComprasActivity.class);
+    Bundle bundle = new Bundle();
+
+    usuarioId = 1;
+
+    bundle.putSerializable("usuario",usuarioId);
+    intent.putExtras(bundle);
+    startActivity(intent);
+  }
+
+//  public void sessoesListagem(View view) {
+//    Intent intent = new Intent(this,ListagemFilmesActivity.class);
+//    startActivity(intent);
+//  }
+
+
+
 }

@@ -2,13 +2,15 @@ package com.app.spotfind.Models;
 
 import android.content.Intent;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 public class Compras implements Serializable {
 
     String imbdId;
-    Double valor;
-    Integer id;
+    Integer id, usuarioId, valor;
+
 
   public String getImbdId() {
     return imbdId;
@@ -18,11 +20,11 @@ public class Compras implements Serializable {
     this.imbdId = imbdId;
   }
 
-  public Double getValor() {
+  public Integer getValor() {
     return valor;
   }
 
-  public void setValor(Double valor) {
+  public void setValor(Integer valor) {
     this.valor = valor;
   }
 
@@ -41,7 +43,5 @@ public class Compras implements Serializable {
   public void setUsuarioId(Integer usuarioId) {
     this.usuarioId = usuarioId;
   }
-
-  Integer usuarioId;
 
 }

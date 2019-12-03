@@ -28,18 +28,23 @@ public class ListagemComprasActivity extends AppCompatActivity {
 
 //    listaCompras = (ArrayList<Compras>) getIntent().getExtras().get("lista");
 
-    Call<List<Compras>> call = new RetrofitConfig().getSessoesService().getComprasPorUsuarioId(usuario);
+    String request = "%7B/where/%3A%7B/usuarioId/%3A"+usuario+"%7D%7D";
+
+    Call<List<Compras>> call = new RetrofitConfig().getComprasPorId().getComprasPorUsuarioId(request);
     call.enqueue(new Callback<List<Compras>>() {
       @Override
       public void onResponse(Call<List<Compras>> call, Response<List<Compras>> response) {
-        for (Compras retCompras : response.body()) {
-          System.out.print(retCompras);
+        if (response.body() != null) {
+          for (Compras retCompras : response.body()) {
+            System.out.print(retCompras);
 
-          comprasAct.setId(retCompras.getId());
-          comprasAct.setImbdId(retCompras.getImbdId());
-          comprasAct.setValor(retCompras.getValor());
+            comprasAct.setId(retCompras.getId());
+            comprasAct.setImbdId(retCompras.getImbdId());
+            comprasAct.setValor(retCompras.getValor());
+            comprasAct.setUsuarioId(retCompras.getUsuarioId());
 
-          listaCompras.add(comprasAct);
+            listaCompras.add(comprasAct);
+          }
         }
       }
 
@@ -49,9 +54,9 @@ public class ListagemComprasActivity extends AppCompatActivity {
       }
     });
 
-    AdapterCompras adapterCarro = new AdapterCompras(listaCompras,this);
+    AdapterCompras adapterCompras = new AdapterCompras(listaCompras,this);
     ListView listView = findViewById(R.id.listViewListagemCompras);
-    listView.setAdapter(adapterCarro);
+    listView.setAdapter(adapterCompras);
     listView.setOnItemClickListener(new
       DetalhesComprasClickListener(listaCompras,this));
 

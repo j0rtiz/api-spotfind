@@ -21,4 +21,8 @@ public class RetrofitConfig {
     public UsuariosService loginUsuarioService() {
         return this.retrofit.create(UsuariosService.class);
     }
+
+    public ComprasService getComprasPorId() {
+    return this.retrofit.create(ComprasService.class);
+  }
 }

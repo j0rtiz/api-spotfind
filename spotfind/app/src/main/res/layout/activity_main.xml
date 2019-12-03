@@ -68,6 +68,22 @@
       android:layout_height="wrap_content"
       android:textStyle="bold" />
 
+    <Button
+      android:id="@+id/listaComprasBtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20sp"
+      android:layout_marginBottom="20sp"
+      android:onClick="comprasListagem"
+      android:text="@string/botao_compras" />
+
+    <Button
+      android:id="@+id/listaFilmesBtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="sessoesListagem"
+      android:text="@string/lista_filmes_botao" />
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
