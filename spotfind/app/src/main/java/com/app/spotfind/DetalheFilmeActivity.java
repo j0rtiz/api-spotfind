@@ -32,6 +32,8 @@ public class DetalheFilmeActivity extends AppCompatActivity {
   TextView valor= null;
   SimpleDraweeView imgPoster= null;
 
+  String usuarioId;
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,10 @@ public class DetalheFilmeActivity extends AppCompatActivity {
 
     final String imdbId = sessoes.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
+
+    usuarioId = sessoes.getUsuarioId();
+
+
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
     call.enqueue(new Callback<List<Sessoes>>() {
@@ -81,17 +87,20 @@ public class DetalheFilmeActivity extends AppCompatActivity {
     });
   }
 
-//  public void comprarFilme(View view) {
-//    Intent intent = new Intent(this, ConfirmaCompraActivity.class);
-//    Bundle bundle = new Bundle();
-//
-//    Sessoes c = new Sessoes();
-//    c.setImdbId(this.imdb.getText().toString());
-//    c.setValor(this.valor.getText().toString());
-//
-//
-//    bundle.putSerializable("usuarioId", usuarioId);
-//    intent.putExtras(bundle);
-//    startActivitesty(intent);
-//  }
+  public void comprarFilme(View view) {
+    Intent intent = new Intent(this, ConfirmaCompraActivity.class);
+    Bundle bundle = new Bundle();
+
+    Sessoes s = new Sessoes();
+    s.setImdbId(imdb.getText().toString());
+    s.setValor(valor.getText().toString());
+    s.setUsuarioId(usuarioId);
+
+    s.setTitulo(titulo.getText().toString());
+    s.setLocal(local.getText().toString());
+
+    bundle.putSerializable("filmeParaCompra", s);
+    intent.putExtras(bundle);
+    startActivity(intent);
+  }
 }

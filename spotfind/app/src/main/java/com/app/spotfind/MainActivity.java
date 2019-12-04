@@ -32,7 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
   public void filmesTop100Listagem(View view) {
     Intent intentFilmes = new Intent(this, ListagemFilmesActivity.class);
+    //novo, acima é padrão junto com o startActivity
+    Bundle bundle = new Bundle();
 
+    bundle.putSerializable("usuarioId", usuarioId);
+    intentFilmes.putExtras(bundle);
+    startActivity(intentFilmes);
+    //fim novo
     startActivity(intentFilmes);
   }
 }

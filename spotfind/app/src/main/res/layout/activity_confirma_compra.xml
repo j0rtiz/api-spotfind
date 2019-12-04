@@ -6,59 +6,71 @@
   android:layout_height="match_parent"
   tools:context=".ConfirmaCompraActivity">
 
-  <TextView
-    android:id="@+id/textView4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/titulo"
-    tools:layout_editor_absoluteX="40dp"
-    tools:layout_editor_absoluteY="110dp" />
 
-  <TextView
-    android:id="@+id/textView5"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="TextView"
-    tools:layout_editor_absoluteX="149dp"
-    tools:layout_editor_absoluteY="110dp" />
+  <LinearLayout
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
 
-  <TextView
-    android:id="@+id/textView6"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/local"
-    tools:layout_editor_absoluteX="39dp"
-    tools:layout_editor_absoluteY="148dp" />
+    <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/titulo"
+      tools:layout_editor_absoluteX="40dp"
+      tools:layout_editor_absoluteY="110dp" />
 
-  <TextView
-    android:id="@+id/textView7"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="TextView"
-    tools:layout_editor_absoluteX="149dp"
-    tools:layout_editor_absoluteY="151dp" />
+    <TextView
+      android:id="@+id/tituloConfirmaTxt"
+      android:layout_width="232dp"
+      android:layout_height="21dp"
+      android:text="TextView"
+      tools:layout_editor_absoluteX="149dp"
+      tools:layout_editor_absoluteY="110dp" />
 
-  <TextView
-    android:id="@+id/textView8"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/valor_compra"
-    tools:layout_editor_absoluteX="40dp"
-    tools:layout_editor_absoluteY="187dp" />
+    <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/local"
+      tools:layout_editor_absoluteX="39dp"
+      tools:layout_editor_absoluteY="148dp" />
 
-  <TextView
-    android:id="@+id/textView9"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="TextView"
-    tools:layout_editor_absoluteX="152dp"
-    tools:layout_editor_absoluteY="187dp" />
+    <TextView
+      android:id="@+id/localConfirmaTxt"
+      android:layout_width="222dp"
+      android:layout_height="15dp"
+      android:text="TextView"
+      tools:layout_editor_absoluteX="149dp"
+      tools:layout_editor_absoluteY="151dp" />
 
-  <Button
-    android:id="@+id/doConfirmaCompra"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/confirma_compra"
-    tools:layout_editor_absoluteX="122dp"
-    tools:layout_editor_absoluteY="451dp" />
+    <TextView
+      android:id="@+id/textView8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/valor_compra"
+      tools:layout_editor_absoluteX="40dp"
+      tools:layout_editor_absoluteY="187dp" />
+
+    <TextView
+      android:id="@+id/valorConfirmaTxt"
+      android:layout_width="226dp"
+      android:layout_height="20dp"
+      android:text="TextView"
+      tools:layout_editor_absoluteX="149dp"
+      tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+      android:id="@+id/doConfirmaCompra"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="ConfirmaComprar"
+      android:text="@string/confirma_compra"
+      tools:layout_editor_absoluteX="122dp"
+      tools:layout_editor_absoluteY="451dp" />
+
+
+  </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

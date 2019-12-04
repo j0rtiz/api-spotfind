@@ -15,4 +15,6 @@
   <string name="lista_filmes_botao">Filmes Disponíveis</string>
   <string name="fazer_compra">Comprar Agora</string>
   <string name="confirma_compra">Confirmar Compra</string>
+  <string name="compra_com_sucesso">Compra realizada com sucesso!</string>
+  <string name="compra_nao">Não foi possível comprar</string>
 </resources>

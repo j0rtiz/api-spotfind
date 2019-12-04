@@ -18,6 +18,16 @@ public class Sessoes implements Serializable {
     private String valor;
     private int id;
 
+  public String getUsuarioId() {
+    return usuarioId;
+  }
+
+  public void setUsuarioId(String usuarioId) {
+    this.usuarioId = usuarioId;
+  }
+
+  private String usuarioId;
+
   public Uri getImgPoster() {
     return imgPoster;
   }

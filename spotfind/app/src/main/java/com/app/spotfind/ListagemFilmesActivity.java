@@ -20,6 +20,7 @@ import retrofit2.Response;
 public class ListagemFilmesActivity extends AppCompatActivity {
 
   ArrayList<Sessoes> listaSessoes = new ArrayList<>();
+  int usuarioId;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +29,15 @@ public class ListagemFilmesActivity extends AppCompatActivity {
 
     final Activity a = this;
 
+    usuarioId = (int) getIntent().getExtras().get("usuarioId");
+
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getSessoes();
     call.enqueue(new Callback<List<Sessoes>>() {
       @Override
       public void onResponse(Call<List<Sessoes>> call, Response<List<Sessoes>> response) {
         if (response.body() != null) {
           for (Sessoes sessoes : response.body()) {
-
+            sessoes.setUsuarioId(Integer.toString(usuarioId));
             listaSessoes.add(sessoes);
           }
 
@@ -57,7 +60,6 @@ public class ListagemFilmesActivity extends AppCompatActivity {
   protected void onResume() {
     super.onResume();
 //    listaCompras = banco.buscaCarros();
-
     AdapterFilmes adapterFilmes = new AdapterFilmes(listaSessoes, this);
     ListView listView = findViewById(R.id.listViewListagemFilmes);
     listView.setAdapter(adapterFilmes);
