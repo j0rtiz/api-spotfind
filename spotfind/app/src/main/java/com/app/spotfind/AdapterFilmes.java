@@ -62,7 +62,7 @@ public class AdapterFilmes extends BaseAdapter {
 
     final TextView nomeEvento = view.findViewById(R.id.textTituloFilme);
     final TextView valorEvento = view.findViewById(R.id.textValorFilme);
-    final SimpleDraweeView imagemPoster = view.findViewById(R.id.imagemFIlme);
+
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
     call.enqueue(new Callback<List<Sessoes>>() {

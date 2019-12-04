@@ -4,7 +4,8 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:layout_margin="10dp"
+  android:layout_marginTop="20dp"
+  android:layout_marginBottom="20dp"
   android:background="@color/colorPrimary"
   android:orientation="vertical"
   android:padding="10dp">
@@ -12,7 +13,7 @@
   <ImageView
     android:id="@+id/imagemFIlme"
     android:layout_width="match_parent"
-    android:layout_height="93dp"
+    android:layout_height="wrap_content"
     tools:srcCompat="@tools:sample/avatars[0]" />
 
   <TextView
@@ -33,10 +34,4 @@
     android:textColor="#fefefe"
     android:textStyle="bold" />
 
-  <View
-    android:id="@+id/divider"
-    android:layout_width="match_parent"
-    android:layout_height="4dp"
-    android:layout_marginBottom="20dp"
-    android:background="@android:color/background_dark" />
 </LinearLayout>
