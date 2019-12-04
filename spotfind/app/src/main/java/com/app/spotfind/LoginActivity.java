@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 try {
                     if (login.getUserId() != null) {
-                        goToMainActivity();
+                        goToMainActivity(Integer.parseInt(login.getUserId()));
                     }
                 } catch (Exception e) {
                     Log.e("Usuarios: ", "Erro: " + e.getMessage());
@@ -58,8 +58,12 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void goToMainActivity() {
+    public void goToMainActivity(int usuarioId) {
         Intent mainActivity = new Intent(this, MainActivity.class);
+        Bundle bundle = new Bundle();
+
+        bundle.putSerializable("usuarioId", usuarioId);
+        mainActivity.putExtras(bundle);
         startActivity(mainActivity, null);
     }
 

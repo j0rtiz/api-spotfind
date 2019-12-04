@@ -10,13 +10,16 @@ import com.app.spotfind.Models.Compras;
 import com.app.spotfind.Models.Sessoes;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Callback;
 
 public class AdapterCompras extends BaseAdapter {
 
   ArrayList<Compras> lista;
   Activity activity;
 
-  public AdapterCompras(ArrayList<Compras> listaCompras, Activity activity) {
+  public AdapterCompras(Compras listaCompras, Callback<List<Compras>> activity) {
     this.lista = listaCompras;
     this.activity = activity;
   }

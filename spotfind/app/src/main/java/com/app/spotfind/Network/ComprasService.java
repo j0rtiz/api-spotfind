@@ -1,27 +1,14 @@
 package com.app.spotfind.Network;
 
 import com.app.spotfind.Models.Compras;
-import com.app.spotfind.Models.Sessoes;
 
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
-import retrofit2.http.Query;
+import retrofit2.http.Url;
 
 public interface ComprasService {
-
-  @GET("Compras")
-  Call<List<Compras>> getComprasPorUsuarioId(@Query("filter") String usuario);
-
-  @GET("Compras")
-  Call<List<Compras>> getTodasCompras();
-
-  //Compras + ?filter + =%7B%22where%22%3A%7B%22usuarioId%22%3A1%7D%7D
-  //https://blog.matheuscastiglioni.com.br/consumindo-web-service-no-android-com-retrofit/
-  //https://www.vogella.com/tutorials/Retrofit/article.html
-
-  //
-
+    @GET
+    Call<List<Compras>> getComprasPorUsuario(@Url String url);
 }
