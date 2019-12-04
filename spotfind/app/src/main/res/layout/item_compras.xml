@@ -13,13 +13,13 @@
     android:textStyle="bold" />
 
   <TextView
-    android:id="@+id/textViewIdEvento"
+    android:id="@+id/textViewIdEventoI"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="TextView" />
 
   <TextView
-    android:id="@+id/txtTitulo"
+    android:id="@+id/txtTituloI"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
@@ -27,7 +27,7 @@
     android:textStyle="bold" />
 
   <TextView
-    android:id="@+id/textViewNomeEvento"
+    android:id="@+id/textViewNomeEventoI"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
@@ -42,7 +42,7 @@
     android:textStyle="bold" />
 
   <TextView
-    android:id="@+id/textViewValorEvento"
+    android:id="@+id/textViewValorEventoI"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"

@@ -54,9 +54,9 @@ public class AdapterCompras extends BaseAdapter {
     final String imdbId = compras.getImdbId();
     String urlBuscaImbd = "Sessoes?filter=[where][imdbId]=" + imdbId;
 
-    final TextView idEvento = view.findViewById(R.id.textViewIdEvento);
-    final TextView nomeEvento = view.findViewById(R.id.textViewNomeEvento);
-    final TextView valorEvento = view.findViewById(R.id.textViewValorEvento);
+    final TextView idEvento = view.findViewById(R.id.textViewIdEventoI);
+    final TextView nomeEvento = view.findViewById(R.id.textViewNomeEventoI);
+    final TextView valorEvento = view.findViewById(R.id.textViewValorEventoI);
 
     idEvento.setText(Integer.toString(compras.getId())); //id compra
 
@@ -71,9 +71,7 @@ public class AdapterCompras extends BaseAdapter {
 
         nomeEvento.setText(s.getTitulo());
         valorEvento.setText(s.getValor());
-
       }
-
 
       @Override
       public void onFailure(Call<List<Sessoes>> call, Throwable t) {

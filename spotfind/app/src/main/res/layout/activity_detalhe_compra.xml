@@ -8,15 +8,15 @@
   tools:context=".DetalheCompraActivity">
 
   <FrameLayout
-    android:layout_width="395dp"
-    android:layout_height="455dp"
+    android:layout_width="386dp"
+    android:layout_height="422dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    tools:layout_editor_absoluteY="259dp">
+    tools:layout_editor_absoluteY="312dp">
 
     <TableLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_width="wrap_content"
+      android:layout_height="356dp"
       android:layout_margin="20dp"
       tools:ignore="MissingConstraints">
 
@@ -147,11 +147,16 @@
     </TableLayout>
   </FrameLayout>
 
-  <ImageView
+  <com.facebook.drawee.view.SimpleDraweeView
     android:id="@+id/imageViewCapa"
     android:layout_width="393dp"
     android:layout_height="243dp"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="16dp"
     tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+<!--  <com.facebook.drawee.view.SimpleDraweeView-->
+<!--    android:id="@+id/imgPoster"-->
+<!--    android:layout_width="300px"-->
+<!--    android:layout_height="445px" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

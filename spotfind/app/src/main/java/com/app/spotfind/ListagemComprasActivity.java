@@ -39,9 +39,6 @@ public class ListagemComprasActivity extends AppCompatActivity {
           for (Compras compras : response.body()) {
 
             listaCompras.add(compras);
-
-
-
           }
 
           AdapterCompras adapterCompras = new AdapterCompras(listaCompras, a);
