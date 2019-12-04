@@ -52,13 +52,11 @@ public class AdapterFilmes extends BaseAdapter {
     view = activity.getLayoutInflater().inflate(R.layout.item_filmes, viewGroup, false);
 
     final String imdbId = filmes.getImdbId();
-    String urlBuscaImbd = "Sessoes?filter=[where][imdbId]=" + imdbId;
+    String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
 //    final TextView idEvento = view.findViewById(R.id.textViewIdEventoS);
     final TextView nomeEvento = view.findViewById(R.id.textViewNomeEventoS);
     final TextView valorEvento = view.findViewById(R.id.textViewValorEventoS);
-
-//    idEvento.setText(Integer.toString(filmes.getId())); //id compra
 
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
@@ -67,11 +65,16 @@ public class AdapterFilmes extends BaseAdapter {
       public void onResponse(Call<List<Sessoes>> call, Response<List<Sessoes>> response) {
 
         Sessoes s = new Sessoes();
-        s = response.body().get(i);
+        s = response.body().get(0);
 
 
         nomeEvento.setText(s.getTitulo());
         valorEvento.setText(s.getValor());
+
+
+
+
+
       }
 
       @Override

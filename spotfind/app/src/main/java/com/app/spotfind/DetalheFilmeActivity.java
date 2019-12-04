@@ -29,7 +29,7 @@ public class DetalheFilmeActivity extends AppCompatActivity {
     sessoes = (Sessoes) getIntent().getExtras().get("sessao");
 
     final String imdbId = sessoes.getImdbId();
-    String urlBuscaImbd = "Sessoes?filter=[where][imdbId]=" + imdbId;
+    String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
     final TextView titulo = findViewById(R.id.txtTituloF);
     final TextView ano = findViewById(R.id.txtAnoF);
