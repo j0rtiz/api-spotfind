@@ -74,15 +74,19 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="20sp"
       android:layout_marginBottom="20sp"
+      android:background="@color/colorPrimary"
       android:onClick="comprasListagem"
-      android:text="@string/botao_compras" />
+      android:text="@string/botao_compras"
+      android:textColor="#fefefe" />
 
     <Button
       android:id="@+id/listaFilmesBtn"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
       android:onClick="filmesTop100Listagem"
-      android:text="@string/lista_filmes_botao" />
+      android:text="@string/lista_filmes_botao"
+      android:textColor="#fefefe" />
 
   </LinearLayout>
 

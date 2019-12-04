@@ -1,14 +1,17 @@
 package com.app.spotfind;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.app.spotfind.Models.Compras;
 import com.app.spotfind.Models.Sessoes;
 import com.app.spotfind.Network.RetrofitConfig;
+
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +28,7 @@ public class AdapterFilmes extends BaseAdapter {
   public AdapterFilmes(ArrayList<Sessoes> listaSessoes, Activity activity) {
     this.lista = listaSessoes;
     this.activity = activity;
+
   }
 
 
@@ -47,17 +51,18 @@ public class AdapterFilmes extends BaseAdapter {
 
   @Override
   public View getView(final int i, View view, ViewGroup viewGroup) {
-    // aqui e a ligacao entre filmes e o item_carro
+
     Sessoes filmes = lista.get(i);
     view = activity.getLayoutInflater().inflate(R.layout.item_filmes, viewGroup, false);
 
     final String imdbId = filmes.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
-//    final TextView idEvento = view.findViewById(R.id.textViewIdEventoS);
-    final TextView nomeEvento = view.findViewById(R.id.textViewNomeEventoS);
-    final TextView valorEvento = view.findViewById(R.id.textViewValorEventoS);
 
+
+    final TextView nomeEvento = view.findViewById(R.id.textTituloFilme);
+    final TextView valorEvento = view.findViewById(R.id.textValorFilme);
+    final SimpleDraweeView imagemPoster = view.findViewById(R.id.imagemFIlme);
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
     call.enqueue(new Callback<List<Sessoes>>() {
@@ -69,10 +74,7 @@ public class AdapterFilmes extends BaseAdapter {
 
 
         nomeEvento.setText(s.getTitulo());
-        valorEvento.setText(s.getValor());
-
-
-
+        valorEvento.setText(s.getValor() + " ,00");
 
 
       }

@@ -1,56 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:orientation="vertical">
+  android:layout_margin="10dp"
+  android:background="@color/colorPrimary"
+  android:orientation="vertical"
+  android:padding="10dp">
 
-  <TextView
-    android:id="@+id/textView01"
+  <ImageView
+    android:id="@+id/imagemFIlme"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/id_evento"
-    android:textStyle="bold" />
+    android:layout_height="93dp"
+    tools:srcCompat="@tools:sample/avatars[0]" />
 
   <TextView
-    android:id="@+id/textViewIdEventoS"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="TextView" />
-
-  <TextView
-    android:id="@+id/txtTituloI"
+    android:id="@+id/textTituloFilme"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:text="@string/nome_carro"
+    android:textColor="#fefefe"
     android:textStyle="bold" />
 
   <TextView
-    android:id="@+id/textViewNomeEventoS"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:text="TextView" />
-
-  <TextView
-    android:id="@+id/textView03"
+    android:id="@+id/textValorFilme"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:text="@string/valor_compra"
+    android:textColor="#fefefe"
     android:textStyle="bold" />
-
-  <TextView
-    android:id="@+id/textViewValorEventoS"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:text="TextView" />
 
   <View
     android:id="@+id/divider"
     android:layout_width="match_parent"
     android:layout_height="4dp"
+    android:layout_marginBottom="20dp"
     android:background="@android:color/background_dark" />
 </LinearLayout>
