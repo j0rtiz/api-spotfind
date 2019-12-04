@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorPrimary"
+  tools:context=".DetalheFilmeActivity">
+
+  <FrameLayout
+    android:layout_width="386dp"
+    android:layout_height="422dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="312dp">
+
+    <TableLayout
+      android:layout_width="wrap_content"
+      android:layout_height="356dp"
+      android:layout_margin="20dp"
+      tools:ignore="MissingConstraints">
+
+      <TableRow android:layout_margin="10dp">
+
+        <TextView
+          android:layout_width="96dp"
+          android:background="@color/colorPrimary"
+          android:padding="3dip"
+          android:text="@string/titulo"
+          android:textColor="#fefefe"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txtTituloF"
+          android:layout_width="272dp"
+          android:gravity="right"
+          android:padding="3dip"
+          android:textAlignment="center"
+          android:textColor="#fefefe" />
+      </TableRow>
+
+      <TableRow android:layout_margin="10dp">
+
+        <TextView
+          android:background="@color/colorPrimary"
+          android:padding="3dip"
+          android:text="@string/ano_filme"
+          android:textColor="#fefefe"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txtAnoF"
+          android:gravity="right"
+          android:padding="3dip"
+          android:textAlignment="center"
+          android:textColor="#fefefe" />
+      </TableRow>
+
+      <TableRow android:layout_margin="10dp">
+
+        <TextView
+          android:background="@color/colorPrimary"
+          android:padding="3dip"
+          android:text="@string/genero"
+          android:textColor="#fefefe"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txtGeneroF"
+          android:gravity="right"
+          android:padding="3dip"
+          android:textAlignment="center"
+          android:textColor="#fefefe" />
+      </TableRow>
+
+
+      <TableRow android:layout_margin="10dp">
+
+        <TextView
+          android:background="@color/colorPrimary"
+          android:padding="3dip"
+          android:text="@string/atores"
+          android:textColor="#fefefe"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txtAtoresF"
+          android:gravity="right"
+          android:padding="3dip"
+          android:textAlignment="center"
+          android:textColor="#fefefe" />
+      </TableRow>
+
+      <TableRow android:layout_margin="10dp">
+
+        <TextView
+          android:background="@color/colorPrimary"
+          android:padding="3dip"
+          android:text="@string/imbbId"
+          android:textColor="#fefefe"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txtImdbIdF"
+          android:gravity="right"
+          android:padding="3dip"
+          android:textAlignment="center"
+          android:textColor="#fefefe" />
+      </TableRow>
+
+      <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+          android:background="@color/colorPrimary"
+          android:padding="3dip"
+          android:text="@string/local"
+          android:textColor="#fefefe"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txtLocalF"
+          android:gravity="right"
+          android:padding="3dip"
+          android:textAlignment="center"
+          android:textColor="#fefefe" />
+      </TableRow>
+
+      <TableRow android:layout_margin="10dp">
+
+        <TextView
+          android:background="@color/colorPrimary"
+          android:padding="3dip"
+          android:text="@string/valor_compra"
+          android:textColor="#fefefe"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txtValorF"
+          android:gravity="right"
+          android:padding="3dip"
+          android:textAlignment="center"
+          android:textColor="#fefefe" />
+      </TableRow>
+    </TableLayout>
+  </FrameLayout>
+
+  <com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/imageViewCapaF"
+    android:layout_width="393dp"
+    android:layout_height="243dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="16dp"
+    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+  <!--  <com.facebook.drawee.view.SimpleDraweeView-->
+  <!--    android:id="@+id/imgPoster"-->
+  <!--    android:layout_width="300px"-->
+  <!--    android:layout_height="445px" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

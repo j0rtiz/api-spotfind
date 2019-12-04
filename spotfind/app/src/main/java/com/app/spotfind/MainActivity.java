@@ -29,4 +29,10 @@ public class MainActivity extends AppCompatActivity {
         intentListagemComprasActivity.putExtras(bundle);
         startActivity(intentListagemComprasActivity);
     }
+
+  public void filmesTop100Listagem(View view) {
+    Intent intentFilmes = new Intent(this, ListagemFilmesActivity.class);
+
+    startActivity(intentFilmes);
+  }
 }

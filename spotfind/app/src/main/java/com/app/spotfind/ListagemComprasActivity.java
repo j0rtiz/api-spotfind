@@ -20,7 +20,6 @@ import retrofit2.Response;
 public class ListagemComprasActivity extends AppCompatActivity {
   ArrayList<Compras> listaCompras = new ArrayList<>();
 
-
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
