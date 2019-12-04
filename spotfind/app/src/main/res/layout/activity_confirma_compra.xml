@@ -10,6 +10,7 @@
   <LinearLayout
     android:layout_width="409dp"
     android:layout_height="729dp"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="1dp">
@@ -66,8 +67,10 @@
       android:id="@+id/doConfirmaCompra"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
       android:onClick="ConfirmaComprar"
       android:text="@string/confirma_compra"
+      android:textColor="#fefefe"
       tools:layout_editor_absoluteX="122dp"
       tools:layout_editor_absoluteY="451dp" />
 
