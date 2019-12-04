@@ -8,15 +8,16 @@
   tools:context=".DetalheFilmeActivity">
 
   <FrameLayout
-    android:layout_width="386dp"
-    android:layout_height="422dp"
+    android:layout_width="385dp"
+    android:layout_height="359dp"
     app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.48"
     app:layout_constraintStart_toStartOf="parent"
-    tools:layout_editor_absoluteY="312dp">
+    tools:layout_editor_absoluteY="279dp">
 
     <TableLayout
       android:layout_width="wrap_content"
-      android:layout_height="356dp"
+      android:layout_height="wrap_content"
       android:layout_margin="20dp"
       tools:ignore="MissingConstraints">
 
@@ -154,6 +155,14 @@
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="16dp"
     tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+  <Button
+    android:id="@+id/doComprarBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/fazer_compra"
+    tools:layout_editor_absoluteX="134dp"
+    tools:layout_editor_absoluteY="650dp" />
 
   <!--  <com.facebook.drawee.view.SimpleDraweeView-->
   <!--    android:id="@+id/imgPoster"-->

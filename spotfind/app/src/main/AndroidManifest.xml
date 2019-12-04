@@ -14,7 +14,8 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".DetalheFilmeActivity"></activity>
+    <activity android:name=".ConfirmaCompraActivity"></activity>
+    <activity android:name=".DetalheFilmeActivity" />
     <activity android:name=".ListagemFilmesActivity" />
     <activity android:name=".LoginActivity">
       <intent-filter>

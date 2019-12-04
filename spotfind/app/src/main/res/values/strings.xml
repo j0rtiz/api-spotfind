@@ -13,4 +13,6 @@
   <string name="error_user_passwd">Usuario / senha invalido</string>
   <string name="botao_compras">Compras do Usuário</string>
   <string name="lista_filmes_botao">Filmes Disponíveis</string>
+  <string name="fazer_compra">Comprar Agora</string>
+  <string name="confirma_compra">Confirmar Compra</string>
 </resources>
