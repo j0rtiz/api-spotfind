@@ -19,7 +19,7 @@ public class AdapterCompras extends BaseAdapter {
   ArrayList<Compras> lista;
   Activity activity;
 
-  public AdapterCompras(Compras listaCompras, Callback<List<Compras>> activity) {
+  public AdapterCompras(ArrayList<Compras> listaCompras, Activity activity) {
     this.lista = listaCompras;
     this.activity = activity;
   }
@@ -53,7 +53,7 @@ public class AdapterCompras extends BaseAdapter {
 
 
 
-    idEvento.setText(compras.getId()); //id sessao
+    idEvento.setText(Integer.toString(compras.getId())); //id sessao
 //    nomeEvento.setText(compras.getTitulo());
 //    valorEvento.setText(compras.getValor().toString());
 
