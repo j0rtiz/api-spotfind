@@ -33,7 +33,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
     compras = (Compras) getIntent().getExtras().get("compras");
 
     final String imdbId = compras.getImdbId();
-    String urlBuscaImbd = "Sessoes?filter=[where][imdbId]=" + imdbId;
+    String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
     final TextView titulo = findViewById(R.id.txtTitulo);
     final TextView ano = findViewById(R.id.txtAno);

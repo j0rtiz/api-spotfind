@@ -52,7 +52,7 @@ public class AdapterCompras extends BaseAdapter {
     view = activity.getLayoutInflater().inflate(R.layout.item_compras, viewGroup, false);
 
     final String imdbId = compras.getImdbId();
-    String urlBuscaImbd = "Sessoes?filter=[where][imdbId]=" + imdbId;
+    String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
     final TextView idEvento = view.findViewById(R.id.textViewIdEventoI);
     final TextView nomeEvento = view.findViewById(R.id.textViewNomeEventoI);
@@ -67,7 +67,7 @@ public class AdapterCompras extends BaseAdapter {
       public void onResponse(Call<List<Sessoes>> call, Response<List<Sessoes>> response) {
 
         Sessoes s = new Sessoes();
-        s = response.body().get(i);
+        s = response.body().get(0);
 
         nomeEvento.setText(s.getTitulo());
         valorEvento.setText(s.getValor());
