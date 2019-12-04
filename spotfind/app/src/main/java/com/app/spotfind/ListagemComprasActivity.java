@@ -31,8 +31,6 @@ public class ListagemComprasActivity extends AppCompatActivity {
     int usuarioId = (int) getIntent().getExtras().get("usuarioId");
     String url = "Compras?filter[where][usuarioId]=" + usuarioId;
 
-
-
     Call<List<Compras>> call = new RetrofitConfig().getComprasService().getComprasPorUsuario(url);
     call.enqueue(new Callback<List<Compras>>() {
       @Override
