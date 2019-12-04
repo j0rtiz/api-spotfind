@@ -9,7 +9,7 @@ import java.io.Serializable;
 public class Compras implements Serializable {
   String imdbId;
   String valor;
-  int id;
+  Integer id;
 
   public String getImdbId() {
     return imdbId;
@@ -27,11 +27,11 @@ public class Compras implements Serializable {
     this.valor = valor;
   }
 
-  public int getId() {
+  public Integer getId() {
     return id;
   }
 
-  public void setId(int id) {
+  public void setId(Integer id) {
     this.id = id;
   }
 

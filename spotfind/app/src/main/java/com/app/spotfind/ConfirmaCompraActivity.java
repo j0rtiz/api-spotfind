@@ -4,22 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.se.omapi.Session;
 import android.util.Log;
 import android.view.View;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.spotfind.Models.Compras;
 import com.app.spotfind.Models.Sessoes;
-import com.app.spotfind.Models.Usuario;
 import com.app.spotfind.Network.RetrofitConfig;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -61,15 +53,16 @@ public class ConfirmaCompraActivity extends AppCompatActivity {
     filmeComprado.setImdbId(imdbId);
     filmeComprado.setValor(valor);
     filmeComprado.setUsuarioId(usuarioId);
+//    filmeComprado.setId(null);
 
-    Call<Compras> call = new RetrofitConfig().getComprasService().doCompra(filmeComprado);
+    Call<Compras> call = new RetrofitConfig().getComprasService().postCompra(filmeComprado);
     call.enqueue(new Callback<Compras>() {
       @Override
       public void onResponse(Call<Compras> call, Response<Compras> response) {
         Compras c = response.body();
 
         try {
-          if (filmeComprado.getImdbId() == c.getImdbId() ) {
+          if (c.getId() != null) {
             comprasListagem(Integer.parseInt(c.getUsuarioId()));
             sucesso();
           }

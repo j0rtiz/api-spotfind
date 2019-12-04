@@ -17,6 +17,6 @@ public interface ComprasService {
   Call<List<Compras>> getComprasPorUsuario(@Url String url);
 
   @POST("Compras")
-  Call<Compras> doCompra(@Body Compras compra);
+  Call<Compras> postCompra(@Body Compras compra);
 
 }
