@@ -24,6 +24,7 @@ public class ListagemComprasActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_listagem_compras);
+    setTitle("Minhas Compras");
 
     final Activity a = this;
 
@@ -66,6 +67,7 @@ public class ListagemComprasActivity extends AppCompatActivity {
     listView.setAdapter(adapterCompras);
     listView.setOnItemClickListener(new
       DetalhesComprasClickListener(listaCompras, this));
+
 
   }
 }
