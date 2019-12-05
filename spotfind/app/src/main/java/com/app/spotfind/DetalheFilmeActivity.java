@@ -33,6 +33,9 @@ public class DetalheFilmeActivity extends AppCompatActivity {
   SimpleDraweeView imgPoster= null;
 
   String usuarioId;
+  String posterParaCompra;
+
+  String valorDeCompra;
 
 
   @Override
@@ -52,14 +55,14 @@ public class DetalheFilmeActivity extends AppCompatActivity {
     valor = findViewById(R.id.txtValorF);
     final SimpleDraweeView imgPoster = findViewById(R.id.imageViewCapaF);
 
+
+
     sessoes = (Sessoes) getIntent().getExtras().get("sessao");
 
     final String imdbId = sessoes.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
     usuarioId = sessoes.getUsuarioId();
-
-
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
     call.enqueue(new Callback<List<Sessoes>>() {
@@ -75,9 +78,13 @@ public class DetalheFilmeActivity extends AppCompatActivity {
         atores.setText(s.getAtores());
         imdb.setText(s.getImdbId());
         local.setText(s.getLocal());
-        valor.setText("R$ "+s.getValor()+",00");
+        valor.setText(s.getValor());
         Uri uri = Uri.parse(s.getPoster());
         imgPoster.setImageURI(uri);
+
+        posterParaCompra = s.getPoster();
+
+        valorDeCompra = s.getValor();
       }
 
       @Override
@@ -93,11 +100,14 @@ public class DetalheFilmeActivity extends AppCompatActivity {
 
     Sessoes s = new Sessoes();
     s.setImdbId(imdb.getText().toString());
-    s.setValor(valor.getText().toString());
+
+    s.setValor(valorDeCompra);
+
     s.setUsuarioId(usuarioId);
 
     s.setTitulo(titulo.getText().toString());
     s.setLocal(local.getText().toString());
+    s.setPoster(posterParaCompra);
 
     bundle.putSerializable("filmeParaCompra", s);
     intent.putExtras(bundle);

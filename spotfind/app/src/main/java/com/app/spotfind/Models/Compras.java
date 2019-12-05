@@ -10,6 +10,7 @@ public class Compras implements Serializable {
   String imdbId;
   String valor;
   Integer id;
+  String usuarioId;
 
   public String getImdbId() {
     return imdbId;
@@ -43,6 +44,5 @@ public class Compras implements Serializable {
     this.usuarioId = usuarioId;
   }
 
-  String usuarioId;
 
 }

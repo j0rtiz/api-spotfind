@@ -18,4 +18,5 @@
   <string name="compra_com_sucesso">Compra realizada com sucesso!</string>
   <string name="compra_nao">Não foi possível comprar</string>
   <string name="valor_compra_pago">Valor Pago</string>
+  <string name="aviso_compra">Você deseja realizar mesmo essa compra?</string>
 </resources>
