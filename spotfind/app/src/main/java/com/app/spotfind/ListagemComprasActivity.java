@@ -26,6 +26,7 @@ public class ListagemComprasActivity extends AppCompatActivity {
     setContentView(R.layout.activity_listagem_compras);
     setTitle("Minhas Compras");
 
+
     final Activity a = this;
 
     int usuarioId = (int) getIntent().getExtras().get("usuarioId");

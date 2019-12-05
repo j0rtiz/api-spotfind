@@ -19,4 +19,15 @@
   <string name="compra_nao">Não foi possível comprar</string>
   <string name="valor_compra_pago">Valor Pago</string>
   <string name="aviso_compra">Você deseja realizar mesmo essa compra?</string>
+  <string name="nome_usuario">Nome e Sobrenome</string>
+  <string name="email">Seu Email</string>
+  <string name="senha">Senha</string>
+  <string name="cadastrar">Cadastrar</string>
+  <string name="ja_possuo_conta">Já possuo conta</string>
+  <string name="digite_seu_nome">Digite seu nome</string>
+  <string name="digite_email">Digite seu email</string>
+  <string name="preencha_email">Faltou o email!</string>
+  <string name="preencha_nome">Preencha o nome!</string>
+  <string name="preencha_senha">Defina uma senha!</string>
+  <string name="erro_cadastrar">Erro no servidor ao cadastrar</string>
 </resources>

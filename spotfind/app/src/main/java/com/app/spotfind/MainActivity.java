@@ -10,26 +10,26 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int usuarioId;
+  private int usuarioId;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Fresco.initialize(this);
-        setContentView(R.layout.activity_main);
-        setTitle("Início");
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    Fresco.initialize(this);
+    setContentView(R.layout.activity_main);
+    setTitle("Início");
 
-        usuarioId = (int) getIntent().getExtras().get("usuarioId");
-    }
+    usuarioId = (int) getIntent().getExtras().get("usuarioId");
+  }
 
-    public void comprasListagem(View view) {
-        Intent intentListagemComprasActivity = new Intent(this, ListagemComprasActivity.class);
-        Bundle bundle = new Bundle();
+  public void comprasListagem(View view) {
+    Intent intentListagemComprasActivity = new Intent(this, ListagemComprasActivity.class);
+    Bundle bundle = new Bundle();
 
-        bundle.putSerializable("usuarioId", usuarioId);
-        intentListagemComprasActivity.putExtras(bundle);
-        startActivity(intentListagemComprasActivity);
-    }
+    bundle.putSerializable("usuarioId", usuarioId);
+    intentListagemComprasActivity.putExtras(bundle);
+    startActivity(intentListagemComprasActivity);
+  }
 
   public void filmesTop100Listagem(View view) {
 

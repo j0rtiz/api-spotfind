@@ -66,6 +66,7 @@
       android:layout_marginTop="29px"
       android:background="@color/colorPrimary"
       android:text="Cadastrar"
+      android:onClick="cadastro"
       android:textColor="#fefefe"
       android:textSize="20dp" />
 
