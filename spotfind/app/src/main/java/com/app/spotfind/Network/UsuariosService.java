@@ -10,6 +10,6 @@ public interface UsuariosService {
     @POST("Usuarios/login")
     Call<Usuario> loginUsuario(@Body Usuario usuario);
 
-    @POST("")
+    @POST("Usuarios")
     Call<Usuario> postCadastroUsuario(@Body Usuario novoUsuario);
 }

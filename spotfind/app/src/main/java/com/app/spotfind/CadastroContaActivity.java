@@ -28,7 +28,7 @@ public class CadastroContaActivity extends AppCompatActivity {
     setTitle("Cadastre Agora!");
   }
 
-  public void cadastrar(View view) {
+  public void chamadaCadastro() {
 
     EditText emailCad = findViewById(R.id.emailCadEditText3);
     EditText passCad = findViewById(R.id.senhaCadEditText);
@@ -62,9 +62,8 @@ public class CadastroContaActivity extends AppCompatActivity {
         Usuario u = response.body();
 
         try {
-          if (u.getUserId() != null) {
-            user = u.getEmail().toString();
-            voltarLogin(user);
+          if (u.getId() != null) {
+            voltarLogin();
             Toast.makeText(getApplicationContext(), "Cadastro Realizado!", Toast.LENGTH_LONG).show();
           }
         } catch (Exception e) {
@@ -80,14 +79,9 @@ public class CadastroContaActivity extends AppCompatActivity {
     });
   }
 
-  public void voltarLogin(String email) {
+  public void voltarLogin() {
     Intent login = new Intent(this, LoginActivity.class);
     Bundle bundle = new Bundle();
-
-    if(email != null || !email.isEmpty()){
-      bundle.putSerializable("usuarioNovo", email);
-      login.putExtras(bundle);
-    }
 
     startActivity(login, null);
   }
@@ -99,6 +93,10 @@ public class CadastroContaActivity extends AppCompatActivity {
 
   public void showError() {
     Toast.makeText(this, R.string.erro_cadastrar, Toast.LENGTH_LONG).show();
+  }
+
+  public void cadastrar(View view){
+    chamadaCadastro();
   }
 
 }

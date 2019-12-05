@@ -28,15 +28,13 @@ public class LoginActivity extends AppCompatActivity {
   }
 
   public void Login(View view) {
-    emailCadastradoNovo = (Usuario) getIntent().getExtras().get("sessao");
-
     TextView userEmail = findViewById(R.id.textEmail);
     TextView password = findViewById(R.id.textSenha);
 
-    if(emailCadastradoNovo != null){
-      userEmail.setText(emailCadastradoNovo.toString());
-      userEmail.setFocusable(false);
-    }
+//    if(emailCadastradoNovo != null){
+//      userEmail.setText(emailCadastradoNovo.toString());
+////      userEmail.setFocusable(false);
+//    }
 
     final Usuario usuario = new Usuario();
     usuario.setEmail(userEmail.getText().toString());

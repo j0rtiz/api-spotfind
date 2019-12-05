@@ -5,16 +5,25 @@ public class Usuario {
   private String password;
   private String email;
   private String userId;
+  private String id;
+
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
 
   public String getNome() {
-    return Nome;
+    return fullName;
   }
 
   public void setNome(String nome) {
-    Nome = nome;
+    fullName = nome;
   }
 
-  private String Nome;
+  private String fullName;
 
   public String getUserId() {
     return userId;
