@@ -33,7 +33,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
     setContentView(R.layout.activity_detalhe_compra);
 
     compras = (Compras) getIntent().getExtras().get("compras");
-    setTitle("Detalha da Compra " + compras.getId());
+    setTitle("Detalhe Reserva ID " + compras.getId());
 
     final String imdbId = compras.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
