@@ -70,6 +70,20 @@
       android:textColor="#fefefe"
       android:textSize="20dp" />
 
+    <TextView
+      android:id="@+id/aboutText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40sp"
+      android:clickable="true"
+      android:linksClickable="true"
+      android:onClick="sobre"
+      android:text="@string/sobre_btn"
+      android:textAlignment="center"
+      android:textAllCaps="true"
+      android:textSize="15sp"
+      android:textStyle="bold|italic" />
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

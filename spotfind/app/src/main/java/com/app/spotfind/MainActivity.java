@@ -71,9 +71,4 @@ public class MainActivity extends AppCompatActivity {
     startActivity(sair);
   }
 
-
-  public void sobre(View view) {
-    Intent intent = new Intent(this,AboutActivity.class);
-    startActivity(intent);
-  }
 }

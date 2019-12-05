@@ -37,4 +37,8 @@
   <string name="sair_logout">Logout / Sair</string>
   <string name="sem_compras">Nada Encontrado</string>
   <string name="sobre_btn">Sobre</string>
+  <string name="faculdade">Faculdade SENAI de Tecnologia Porto Alegre</string>
+  <string name="disciplina">Disciplina Programação em Dispositivos Móveis</string>
+  <string name="direitos_reservados">All Rights Reserved</string>
+  <string name="professor">Professor Marcelo</string>
 </resources>

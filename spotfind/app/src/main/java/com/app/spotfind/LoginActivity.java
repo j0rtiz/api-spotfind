@@ -85,4 +85,9 @@ public class LoginActivity extends AppCompatActivity {
   public void showError() {
     Toast.makeText(this, R.string.error_user_passwd, Toast.LENGTH_LONG).show();
   }
+
+  public void sobre(View view) {
+    Intent intent = new Intent(this, AboutActivity.class);
+    startActivity(intent);
+  }
 }
