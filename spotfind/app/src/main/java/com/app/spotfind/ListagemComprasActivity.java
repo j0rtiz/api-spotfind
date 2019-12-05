@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,7 +27,6 @@ public class ListagemComprasActivity extends AppCompatActivity {
     setContentView(R.layout.activity_listagem_compras);
     setTitle("Minhas Compras");
 
-
     final Activity a = this;
 
     int usuarioId = (int) getIntent().getExtras().get("usuarioId");
@@ -48,6 +48,10 @@ public class ListagemComprasActivity extends AppCompatActivity {
           listView.setOnItemClickListener(new DetalhesComprasClickListener(listaCompras, a));
 
         }
+
+        else{
+          semCompras();
+        }
       }
 
       @Override
@@ -68,7 +72,10 @@ public class ListagemComprasActivity extends AppCompatActivity {
     listView.setAdapter(adapterCompras);
     listView.setOnItemClickListener(new
       DetalhesComprasClickListener(listaCompras, this));
-
-
   }
+
+  public void semCompras() {
+    Toast.makeText(this , R.string.sem_compras, Toast.LENGTH_LONG).show();
+  }
+
 }

@@ -3,6 +3,7 @@ package com.app.spotfind;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,9 +12,11 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 
 public class MainActivity extends AppCompatActivity {
 
-  private String usuarioId;
+  private int usuarioId;
   private Usuario usuario;
   private String usuarioHash;
+
+  private int idNum;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
     setTitle("Início");
 
     usuario = (Usuario) getIntent().getExtras().get("usuario");
-    usuarioId = usuario.getUserId();
-    usuarioHash = usuario.getId();
+    usuarioId = Integer.parseInt(usuario.getUserId());
 
+    usuarioHash = usuario.getId();
   }
 
   public void comprasListagem(View view) {
@@ -50,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     startActivity(intentFilmes);
   }
 
-  public void deletaConfirmaActivity(View view){
+  public void deletaConfirmaActivity(View view) {
     Intent deletaContaAc = new Intent(this, ConfirmaDeletaContaActivity.class);
 
     Bundle bundle = new Bundle();
@@ -60,4 +63,13 @@ public class MainActivity extends AppCompatActivity {
 
     startActivity(deletaContaAc);
   }
+
+  public void voltarLogin(View view) {
+    usuario = null;
+
+    Intent sair = new Intent(this, LoginActivity.class);
+    startActivity(sair);
+  }
+
+
 }

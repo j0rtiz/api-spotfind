@@ -11,10 +11,11 @@
   <LinearLayout
     android:id="@+id/linearLayoutMain"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="218dp"
+    android:layout_margin="10sp"
     android:layout_marginHorizontal="10dp"
     android:layout_marginVertical="10dp"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="18dp"
     android:orientation="vertical"
     app:layout_constraintTop_toTopOf="parent"
     tools:layout_editor_absoluteX="20dp">
@@ -98,25 +99,52 @@
   <LinearLayout
     android:id="@+id/linearLayout4"
     android:layout_width="match_parent"
-    android:layout_height="68dp"
-    android:layout_marginBottom="30dp"
+    android:layout_height="149dp"
     android:layout_marginHorizontal="10dp"
     android:layout_marginVertical="10dp"
-    android:layout_marginTop="16dp"
+    android:layout_marginBottom="30dp"
     android:orientation="vertical"
     app:layout_constraintBottom_toBottomOf="parent"
     tools:layout_editor_absoluteX="1dp">
 
     <Button
-      android:id="@+id/deletaContaBtn"
+      android:id="@+id/sairBtn"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:background="#77673AB7"
-      android:onClick="deletaConfirmaActivity"
-      android:text="@string/deletar_conta"
+      android:layout_margin="10sp"
+      android:background="#F44336"
+      android:onClick="voltarLogin"
+      android:text="@string/sair_logout"
       android:textColor="#FFFFFF"
       tools:layout_editor_absoluteX="0dp"
       tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+      android:id="@+id/textView9"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="20sp"
+      android:clickable="true"
+      android:linksClickable="true"
+      android:onClick="deletaConfirmaActivity"
+      android:text="@string/deletar_conta"
+      android:textAlignment="center"
+      android:textAllCaps="true"
+      android:textSize="15sp"
+      android:textStyle="bold|italic" />
+
+    <!--    <Button-->
+    <!--      android:id="@+id/deletaContaBtn"-->
+    <!--      android:layout_width="match_parent"-->
+    <!--      android:layout_height="wrap_content"-->
+    <!--      android:layout_margin="10sp"-->
+    <!--      android:background="#77673AB7"-->
+    <!--      android:onClick="deletaConfirmaActivity"-->
+    <!--      android:text="@string/deletar_conta"-->
+    <!--      android:textColor="#FFFFFF"-->
+    <!--      tools:layout_editor_absoluteX="0dp"-->
+    <!--      tools:layout_editor_absoluteY="448dp" />-->
+
 
   </LinearLayout>
 
