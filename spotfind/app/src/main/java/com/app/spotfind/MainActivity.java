@@ -43,4 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
     startActivity(intentFilmes);
   }
+
+  public void deletaConfirmaActivity(View view){
+    Intent deletaContaAc = new Intent(this, ConfirmaDeletaContaActivity.class);
+
+    Bundle bundle = new Bundle();
+
+    bundle.putSerializable("usuarioId", usuarioId);
+    deletaContaAc.putExtras(bundle);
+
+    startActivity(deletaContaAc);
+  }
 }

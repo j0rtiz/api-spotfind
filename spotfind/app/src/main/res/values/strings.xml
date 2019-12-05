@@ -30,4 +30,5 @@
   <string name="preencha_nome">Preencha o nome!</string>
   <string name="preencha_senha">Defina uma senha!</string>
   <string name="erro_cadastrar">Erro no servidor ao cadastrar</string>
+  <string name="deletar_conta">Deletar Minha Conta</string>
 </resources>
