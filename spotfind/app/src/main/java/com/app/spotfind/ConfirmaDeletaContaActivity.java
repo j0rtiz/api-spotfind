@@ -17,6 +17,7 @@ import retrofit2.Response;
 
 public class ConfirmaDeletaContaActivity extends AppCompatActivity {
   String usuarioHash;
+  String numId;
   Usuario usuario;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -25,19 +26,20 @@ public class ConfirmaDeletaContaActivity extends AppCompatActivity {
 
     usuario = (Usuario) getIntent().getExtras().get("usuario");
     usuarioHash = usuario.getId();
+    numId = usuario.getUserId();
   }
 
 
   public void chamadaDeletar() {
 
-    Call<Usuario> call = new RetrofitConfig().loginUsuarioService().deleteUsuario(usuarioHash);
+    String uriDeletaUsuario = "Usuarios/"+numId+"?access_token="+usuarioHash;
+
+    Call<Usuario> call = new RetrofitConfig().loginUsuarioService().deleteUsuario(uriDeletaUsuario);
     call.enqueue(new Callback<Usuario>() {
       @Override
       public void onResponse(Call<Usuario> call, Response<Usuario> response) {
-        Usuario u = response.body();
-
         try {
-          if (u.getId().equals(usuarioHash)) {
+          if (response.isSuccessful()) {
             voltarLogin();
             Toast.makeText(getApplicationContext(), "Conta Deletada!", Toast.LENGTH_LONG).show();
           }
@@ -49,7 +51,7 @@ public class ConfirmaDeletaContaActivity extends AppCompatActivity {
 
       @Override
       public void onFailure(Call<Usuario> call, Throwable t) {
-        Log.e("Cadastro: ", "Erro: " + t.getMessage());
+        Log.e("Deleta conta: ", "Erro: " + t.getMessage());
       }
     });
   }
@@ -66,8 +68,7 @@ public class ConfirmaDeletaContaActivity extends AppCompatActivity {
   }
 
   public void voltarLogin() {
-    Intent login = new Intent(this, MainActivity.class);
-
+    Intent login = new Intent(this, LoginActivity.class);
 
     startActivity(login, null);
   }
