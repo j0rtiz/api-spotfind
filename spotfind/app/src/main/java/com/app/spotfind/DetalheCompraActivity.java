@@ -2,6 +2,7 @@ package com.app.spotfind;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +33,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
     setContentView(R.layout.activity_detalhe_compra);
 
     compras = (Compras) getIntent().getExtras().get("compras");
-    setTitle("Detalha da Compra " +compras.getId());
+    setTitle("Detalha da Compra " + compras.getId());
 
     final String imdbId = compras.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
@@ -60,7 +61,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
         atores.setText(s.getAtores());
         imdb.setText(s.getImdbId());
         local.setText(s.getLocal());
-        valor.setText("R$ "+compras.getValor()+",00");
+        valor.setText("R$ " + compras.getValor() + ",00");
         Uri uri = Uri.parse(s.getPoster());
         imgPoster.setImageURI(uri);
       }
@@ -74,5 +75,16 @@ public class DetalheCompraActivity extends AppCompatActivity {
 
   public void deletaFilme(View view) {
     finish();
+  }
+
+
+  public void Voltar(View view) {
+    Intent intent = new Intent(this, MainActivity.class);
+    startActivity(intent);
+  }
+
+  public void Sair(View view){
+    Intent intent = new Intent(this, MainActivity.class);
+    startActivity(intent);
   }
 }

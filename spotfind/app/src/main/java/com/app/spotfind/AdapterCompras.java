@@ -1,6 +1,7 @@
 package com.app.spotfind;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -54,11 +55,11 @@ public class AdapterCompras extends BaseAdapter {
     final String imdbId = compras.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
-    final TextView idEvento = view.findViewById(R.id.textViewIdEventoI);
+
     final TextView nomeEvento = view.findViewById(R.id.textViewNomeEventoI);
     final TextView valorEvento = view.findViewById(R.id.textViewValorEventoI);
 
-    idEvento.setText(Integer.toString(compras.getId())); //id compra
+
 
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
@@ -81,4 +82,5 @@ public class AdapterCompras extends BaseAdapter {
 
     return view;
   }
+
 }
