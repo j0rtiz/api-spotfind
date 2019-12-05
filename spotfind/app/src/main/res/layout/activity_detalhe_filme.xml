@@ -10,8 +10,8 @@
   <FrameLayout
     android:id="@+id/frameLayout"
     android:layout_width="385dp"
-    android:layout_height="0dp"
-    android:layout_marginBottom="12dp"
+    android:layout_height="235dp"
+    android:layout_marginBottom="10dp"
     app:layout_constraintBottom_toTopOf="@+id/doComprarBtn"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.48"
@@ -19,15 +19,20 @@
     app:layout_constraintTop_toBottomOf="@+id/imageViewCapaF">
 
     <TableLayout
-      android:layout_width="wrap_content"
+      android:layout_width="374dp"
       android:layout_height="wrap_content"
-      android:layout_margin="20dp"
+      android:layout_margin="2sp"
       tools:ignore="MissingConstraints">
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2sp"
+        android:layout_marginTop="3sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:layout_width="96dp"
+          android:layout_width="23dp"
           android:background="@color/colorPrimary"
           android:padding="3dip"
           android:text="@string/titulo"
@@ -36,14 +41,18 @@
 
         <TextView
           android:id="@+id/txtTituloF"
-          android:layout_width="272dp"
+          android:layout_width="285dp"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#fefefe"
+          app:autoSizeTextType="uniform" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
           android:background="@color/colorPrimary"
@@ -56,11 +65,14 @@
           android:id="@+id/txtAnoF"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
+          android:textAlignment="viewStart"
           android:textColor="#fefefe" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginEnd="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
           android:background="@color/colorPrimary"
@@ -73,12 +85,15 @@
           android:id="@+id/txtGeneroF"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
+          android:textAlignment="viewStart"
           android:textColor="#fefefe" />
       </TableRow>
 
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
           android:background="@color/colorPrimary"
@@ -91,11 +106,14 @@
           android:id="@+id/txtAtoresF"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
+          android:textAlignment="viewStart"
           android:textColor="#fefefe" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
           android:background="@color/colorPrimary"
@@ -106,16 +124,19 @@
 
         <TextView
           android:id="@+id/txtImdbIdF"
+          android:layout_width="307dp"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
+          android:textAlignment="viewStart"
           android:textColor="#fefefe" />
       </TableRow>
 
       <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp">
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
           android:background="@color/colorPrimary"
@@ -128,11 +149,14 @@
           android:id="@+id/txtLocalF"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
+          android:textAlignment="viewStart"
           android:textColor="#fefefe" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
           android:background="@color/colorPrimary"
@@ -145,7 +169,7 @@
           android:id="@+id/txtValorF"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
+          android:textAlignment="viewStart"
           android:textColor="#fefefe" />
       </TableRow>
     </TableLayout>
@@ -153,12 +177,12 @@
 
   <com.facebook.drawee.view.SimpleDraweeView
     android:id="@+id/imageViewCapaF"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
+    android:layout_width="178dp"
+    android:layout_height="274dp"
     android:layout_marginStart="8dp"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="30dp"
     android:layout_marginEnd="8dp"
-    android:layout_marginBottom="20dp"
+    android:layout_marginBottom="30dp"
     app:layout_constraintBottom_toTopOf="@+id/frameLayout"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -167,11 +191,14 @@
 
   <Button
     android:id="@+id/doComprarBtn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="183dp"
+    android:layout_height="47dp"
+    android:layout_marginTop="5dp"
     android:layout_marginBottom="33dp"
+    android:background="#FFFFFF"
     android:onClick="comprarFilme"
     android:text="@string/fazer_compra"
+    android:textColor="#673AB7"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"

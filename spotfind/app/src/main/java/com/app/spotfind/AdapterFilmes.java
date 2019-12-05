@@ -72,9 +72,8 @@ public class AdapterFilmes extends BaseAdapter {
         Sessoes s = new Sessoes();
         s = response.body().get(0);
 
-
         nomeEvento.setText(s.getTitulo());
-        valorEvento.setText(s.getValor() + " ,00");
+        valorEvento.setText("R$ "+s.getValor() + " ,00");
 
 
       }

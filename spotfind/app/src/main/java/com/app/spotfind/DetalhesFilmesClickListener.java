@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 
 import com.app.spotfind.Models.Compras;
 import com.app.spotfind.Models.Sessoes;
+import com.facebook.drawee.backends.pipeline.Fresco;
 
 import java.util.ArrayList;
 
@@ -15,6 +16,7 @@ public class DetalhesFilmesClickListener implements AdapterView.OnItemClickListe
 
   ArrayList<Sessoes> minhaLista;
   Activity activity;
+
 
   public DetalhesFilmesClickListener(ArrayList<Sessoes> lista,
                                      Activity activity){
