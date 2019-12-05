@@ -101,8 +101,8 @@
 
   <LinearLayout
     android:id="@+id/linearLayout4"
-    android:layout_width="407dp"
-    android:layout_height="244dp"
+    android:layout_width="match_parent"
+    android:layout_height="155sp"
     android:layout_marginHorizontal="10dp"
     android:layout_marginVertical="10dp"
     android:orientation="vertical"
@@ -125,26 +125,55 @@
       tools:layout_editor_absoluteX="0dp"
       tools:layout_editor_absoluteY="448dp" />
 
-    <Button
-      android:id="@+id/button3"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:background="#F44336"
-      android:onClick="deletaConfirmaActivity"
-      android:text="DELETAR MINHA CONTA"
-      android:textColor="#FEFEFE" />
+    <!--    <Button-->
+    <!--      android:id="@+id/button3"-->
+    <!--      android:layout_width="match_parent"-->
+    <!--      android:layout_height="wrap_content"-->
+    <!--      android:layout_margin="10dp"-->
+    <!--      android:background="#F44336"-->
+    <!--      android:onClick="deletaConfirmaActivity"-->
+    <!--      android:text="DELETAR MINHA CONTA"-->
+    <!--      android:textColor="#FEFEFE" />-->
 
-    <Button
-      android:id="@+id/idSobre"
+    <!--    <Button-->
+    <!--      android:id="@+id/idSobre"-->
+    <!--      android:layout_width="match_parent"-->
+    <!--      android:layout_height="wrap_content"-->
+    <!--      android:layout_margin="10dp"-->
+    <!--      android:layout_marginTop="20dp"-->
+    <!--      android:background="#B39DDB"-->
+    <!--      android:onClick="sobre"-->
+    <!--      android:text="SOBRE"-->
+    <!--      android:textColor="#fefefe" />-->
+
+    <TextView
+      android:id="@+id/aboutText"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:layout_marginTop="20dp"
-      android:background="@color/colorPrimary"
+      android:layout_margin="10sp"
+      android:clickable="true"
+      android:linksClickable="true"
       android:onClick="sobre"
-      android:text="SOBRE"
-      android:textColor="#fefefe" />
+      android:text="@string/sobre_btn"
+      android:textAlignment="center"
+      android:textAllCaps="true"
+      android:textSize="15sp"
+      android:textStyle="bold|italic" />
+
+
+    <TextView
+      android:id="@+id/textView9"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10sp"
+      android:clickable="true"
+      android:linksClickable="true"
+      android:onClick="deletaConfirmaActivity"
+      android:text="@string/deletar_conta"
+      android:textAlignment="center"
+      android:textAllCaps="true"
+      android:textSize="15sp"
+      android:textStyle="bold|italic" />
 
     <!--    <Button-->
     <!--      android:id="@+id/deletaContaBtn"-->

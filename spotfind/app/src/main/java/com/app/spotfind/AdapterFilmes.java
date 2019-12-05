@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.app.spotfind.Models.Sessoes;
 import com.app.spotfind.Network.RetrofitConfig;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class AdapterFilmes extends BaseAdapter {
 
   ArrayList<Sessoes> lista;
   Activity activity;
+
 
   public AdapterFilmes(ArrayList<Sessoes> listaSessoes, Activity activity) {
     this.lista = listaSessoes;
@@ -58,11 +60,8 @@ public class AdapterFilmes extends BaseAdapter {
     final String imdbId = filmes.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
 
-
-
     final TextView nomeEvento = view.findViewById(R.id.textTituloFilme);
     final TextView valorEvento = view.findViewById(R.id.textValorFilme);
-
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
     call.enqueue(new Callback<List<Sessoes>>() {

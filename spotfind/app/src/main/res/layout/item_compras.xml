@@ -6,68 +6,60 @@
   android:layout_height="wrap_content"
   android:layout_marginTop="10sp"
   android:background="#FFFFFF"
-  android:orientation="vertical"
-  android:padding="20dp"
+  android:orientation="horizontal"
+  android:padding="10dp"
   android:paddingLeft="20dp">
 
 
-  <TextView
-    android:id="@+id/textTituloFilme"
-    android:layout_width="120dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="4sp"
-    android:layout_weight="1"
-    android:text="Filme"
-    android:textColor="#673AB7"
-    android:textStyle="bold" />
-
-  <TextView
-    android:id="@+id/textViewNomeEventoI"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="2sp"
-    android:layout_weight="1"
-    android:text="TextView"
-    android:textColor="#673AB7" />
-
   <LinearLayout
-    android:layout_width="match_parent"
+    android:layout_width="340dp"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:layout_marginRight="50sp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/textTituloFilme"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Filme"
+      android:textColor="#673AB7"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/textViewNomeEventoI"
+      android:layout_width="198dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="2sp"
+      android:layout_marginTop="2sp"
+      android:layout_weight="1"
+      android:text="TextView"
+      android:textColor="#673AB7" />
+
 
     <TextView
       android:id="@+id/textValorFilme"
       android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:layout_marginLeft="5sp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="3sp"
       android:layout_weight="1"
       android:text="@string/valor_compra"
       android:textColor="#673AB7"
       android:textStyle="bold" />
 
-  </LinearLayout>
-
-  <TextView
-    android:id="@+id/textViewValorEventoI"
-    android:layout_width="200sp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:text="TextView"
-    android:textColor="#673AB7"
-    android:textColorHighlight="#673AB7" />
-
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    <TextView
+      android:id="@+id/textViewValorEventoI"
+      android:layout_width="200sp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="2sp"
+      android:layout_weight="1"
+      android:text="TextView"
+      android:textColor="#673AB7"
+      android:textColorHighlight="#673AB7" />
 
 
   </LinearLayout>
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="13dp"
-    android:orientation="horizontal">
 
-  </LinearLayout>
 </LinearLayout>

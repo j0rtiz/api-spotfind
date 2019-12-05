@@ -36,4 +36,5 @@
   <string name="voce_deseja_deletar">Você deseja mesmo deletar sua conta?</string>
   <string name="sair_logout">Logout / Sair</string>
   <string name="sem_compras">Nada Encontrado</string>
+  <string name="sobre_btn">Sobre</string>
 </resources>
