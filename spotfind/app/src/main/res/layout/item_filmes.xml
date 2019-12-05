@@ -10,12 +10,6 @@
   android:orientation="vertical"
   android:padding="10dp">
 
-  <ImageView
-    android:id="@+id/imagemFIlme"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:srcCompat="@tools:sample/avatars[0]" />
-
   <TextView
     android:id="@+id/textTituloFilme"
     android:layout_width="match_parent"
@@ -23,6 +17,7 @@
     android:layout_weight="1"
     android:text="@string/nome_carro"
     android:textColor="#fefefe"
+    android:textSize="15sp"
     android:textStyle="bold" />
 
   <TextView
@@ -32,6 +27,7 @@
     android:layout_weight="1"
     android:text="@string/valor_compra"
     android:textColor="#fefefe"
-    android:textStyle="bold" />
+    android:textSize="15sp"
+    android:textStyle="italic" />
 
 </LinearLayout>

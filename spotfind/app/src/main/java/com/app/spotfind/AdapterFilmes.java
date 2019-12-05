@@ -72,7 +72,7 @@ public class AdapterFilmes extends BaseAdapter {
         s = response.body().get(0);
 
         nomeEvento.setText(s.getTitulo());
-        valorEvento.setText("R$ "+s.getValor() + " ,00");
+        valorEvento.setText("R$ "+s.getValor() + ",00");
 
 
       }

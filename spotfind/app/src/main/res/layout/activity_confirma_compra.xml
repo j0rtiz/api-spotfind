@@ -8,11 +8,11 @@
 
   <LinearLayout
     android:id="@+id/linearLayout"
-    android:layout_width="162dp"
+    android:layout_width="195dp"
     android:layout_height="198dp"
-    android:layout_marginStart="40dp"
+    android:layout_marginStart="30dp"
     android:layout_marginTop="100dp"
-    android:layout_marginEnd="25dp"
+    android:layout_marginEnd="15dp"
     android:orientation="vertical"
     app:layout_constraintEnd_toStartOf="@+id/PosterConfImageView"
     app:layout_constraintHorizontal_bias="1.0"
@@ -26,7 +26,7 @@
       android:layout_height="wrap_content"
       android:text="@string/titulo"
       android:textColor="#673AB7"
-      android:textStyle="bold" />
+      android:textSize="15sp" />
 
     <TextView
       android:id="@+id/tituloConfirmaTxt"
@@ -34,7 +34,9 @@
       android:layout_height="wrap_content"
       android:layout_marginBottom="10sp"
       android:text="TextView"
-      android:textColor="#BE673AB7" />
+      android:textColor="#BE673AB7"
+      android:textSize="18sp"
+      android:textStyle="bold" />
 
     <TextView
       android:id="@+id/textView3"
@@ -42,7 +44,7 @@
       android:layout_height="wrap_content"
       android:text="@string/local"
       android:textColor="#673AB7"
-      android:textStyle="bold" />
+      android:textSize="15sp" />
 
     <TextView
       android:id="@+id/localConfirmaTxt"
@@ -50,7 +52,9 @@
       android:layout_height="wrap_content"
       android:layout_marginBottom="10sp"
       android:text="TextView"
-      android:textColor="#BE673AB7" />
+      android:textColor="#BE673AB7"
+      android:textSize="18sp"
+      android:textStyle="bold" />
 
     <TextView
       android:id="@+id/textView5"
@@ -58,23 +62,25 @@
       android:layout_height="wrap_content"
       android:text="@string/valor_compra"
       android:textColor="#673AB7"
-      android:textStyle="bold" />
+      android:textSize="15sp" />
 
     <TextView
       android:id="@+id/valorConfirmaTxt"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="TextView"
-      android:textColor="#BE673AB7" />
+      android:textColor="#BE673AB7"
+      android:textSize="18sp"
+      android:textStyle="bold" />
   </LinearLayout>
 
   <com.facebook.drawee.view.SimpleDraweeView
     android:id="@+id/PosterConfImageView"
-    android:layout_width="146dp"
-    android:layout_height="201dp"
-    android:layout_marginStart="25dp"
+    android:layout_width="132dp"
+    android:layout_height="198dp"
+    android:layout_marginStart="15dp"
     android:layout_marginTop="100dp"
-    android:layout_marginEnd="40dp"
+    android:layout_marginEnd="30dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toEndOf="@+id/linearLayout"
     app:layout_constraintTop_toTopOf="parent"
@@ -85,10 +91,12 @@
     android:id="@+id/textView7"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="92dp"
+    android:layout_marginTop="116dp"
     android:text="@string/aviso_compra"
     android:textColor="#673AB7"
+    android:textSize="16sp"
     app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/PosterConfImageView" />
 
@@ -96,11 +104,12 @@
     android:id="@+id/button2"
     android:layout_width="184dp"
     android:layout_height="50dp"
-    android:layout_marginTop="44dp"
+    android:layout_marginTop="25dp"
     android:background="#4CAF50"
     android:onClick="ConfirmaComprar"
     android:text="@string/confirma_compra"
     android:textColor="#FFFFFF"
+    android:textSize="16sp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.497"

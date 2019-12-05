@@ -78,7 +78,7 @@ public class DetalheFilmeActivity extends AppCompatActivity {
         atores.setText(s.getAtores());
         imdb.setText(s.getImdbId());
         local.setText(s.getLocal());
-        valor.setText(s.getValor());
+        valor.setText("R$ "+s.getValor()+",00");
         Uri uri = Uri.parse(s.getPoster());
         imgPoster.setImageURI(uri);
 
