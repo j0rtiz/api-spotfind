@@ -70,7 +70,7 @@ public class AdapterCompras extends BaseAdapter {
         s = response.body().get(0);
 
         nomeEvento.setText(s.getTitulo());
-        valorEvento.setText(s.getValor());
+        valorEvento.setText("R$ "+s.getValor()+",00");
       }
 
       @Override

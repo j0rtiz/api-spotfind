@@ -2,8 +2,8 @@
   <string name="app_name">Spotfind</string>
   <string name="deletar_compra">Deletar Compra</string>
   <string name="id_evento">ID</string>
-  <string name="nome_carro">Evento:</string>
-  <string name="valor_compra">Valor:</string>
+  <string name="nome_carro">Evento</string>
+  <string name="valor_compra">Valor</string>
   <string name="titulo">Titulo</string>
   <string name="ano_filme">Ano</string>
   <string name="atores">Atores</string>
@@ -17,4 +17,5 @@
   <string name="confirma_compra">Confirmar Compra</string>
   <string name="compra_com_sucesso">Compra realizada com sucesso!</string>
   <string name="compra_nao">Não foi possível comprar</string>
+  <string name="valor_compra_pago">Valor Pago</string>
 </resources>

@@ -4,159 +4,193 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@color/colorPrimary"
+  android:background="#FFFFFFFF"
   tools:context=".DetalheCompraActivity">
 
   <FrameLayout
-    android:layout_width="386dp"
-    android:layout_height="422dp"
+    android:id="@+id/frameLayout"
+    android:layout_width="385dp"
+    android:layout_height="235dp"
+    android:layout_marginTop="10dp"
     app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.48"
     app:layout_constraintStart_toStartOf="parent"
-    tools:layout_editor_absoluteY="312dp">
+    app:layout_constraintTop_toBottomOf="@+id/imageViewCapa">
 
     <TableLayout
-      android:layout_width="wrap_content"
-      android:layout_height="356dp"
-      android:layout_margin="20dp"
+      android:layout_width="374dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="2sp"
       tools:ignore="MissingConstraints">
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2sp"
+        android:layout_marginTop="3sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:layout_width="96dp"
-          android:background="@color/colorPrimary"
+          android:layout_width="78dp"
+          android:background="#007159C1"
           android:padding="3dip"
           android:text="@string/titulo"
-          android:textColor="#fefefe"
+          android:textColor="#673AB7"
           android:textStyle="bold" />
 
         <TextView
           android:id="@+id/txtTitulo"
-          android:layout_width="272dp"
+          android:layout_width="285dp"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#673AB7"
+          app:autoSizeTextType="uniform" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:background="@color/colorPrimary"
+          android:background="#007159C1"
           android:padding="3dip"
           android:text="@string/ano_filme"
-          android:textColor="#fefefe"
+          android:textColor="#673AB7"
           android:textStyle="bold" />
 
         <TextView
           android:id="@+id/txtAno"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#673AB7" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginEnd="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:background="@color/colorPrimary"
+          android:background="#007159C1"
           android:padding="3dip"
           android:text="@string/genero"
-          android:textColor="#fefefe"
+          android:textColor="#673AB7"
           android:textStyle="bold" />
 
         <TextView
           android:id="@+id/txtGenero"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#673AB7" />
       </TableRow>
 
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:background="@color/colorPrimary"
+          android:background="#007159C1"
           android:padding="3dip"
           android:text="@string/atores"
-          android:textColor="#fefefe"
+          android:textColor="#673AB7"
           android:textStyle="bold" />
 
         <TextView
           android:id="@+id/txtAtores"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#673AB7" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:background="@color/colorPrimary"
+          android:background="#007159C1"
           android:padding="3dip"
           android:text="@string/imbbId"
-          android:textColor="#fefefe"
+          android:textColor="#673AB7"
           android:textStyle="bold" />
 
         <TextView
           android:id="@+id/txtImdbId"
+          android:layout_width="307dp"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#673AB7" />
       </TableRow>
 
       <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp">
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:background="@color/colorPrimary"
+          android:background="#007159C1"
           android:padding="3dip"
           android:text="@string/local"
-          android:textColor="#fefefe"
+          android:textColor="#673AB7"
           android:textStyle="bold" />
 
         <TextView
           android:id="@+id/txtLocal"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#673AB7" />
       </TableRow>
 
-      <TableRow android:layout_margin="10dp">
+      <TableRow
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="7sp">
 
         <TextView
-          android:background="@color/colorPrimary"
+          android:background="#007159C1"
           android:padding="3dip"
-          android:text="@string/valor_compra"
-          android:textColor="#fefefe"
+          android:text="@string/valor_compra_pago"
+          android:textColor="#673AB7"
           android:textStyle="bold" />
 
         <TextView
           android:id="@+id/txtValor"
           android:gravity="right"
           android:padding="3dip"
-          android:textAlignment="center"
-          android:textColor="#fefefe" />
+          android:textAlignment="viewStart"
+          android:textColor="#673AB7" />
       </TableRow>
     </TableLayout>
   </FrameLayout>
 
   <com.facebook.drawee.view.SimpleDraweeView
     android:id="@+id/imageViewCapa"
-    android:layout_width="393dp"
-    android:layout_height="243dp"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="16dp"
+    android:layout_width="178dp"
+    android:layout_height="274dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="30dp"
+    app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
     tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-<!--  <com.facebook.drawee.view.SimpleDraweeView-->
-<!--    android:id="@+id/imgPoster"-->
-<!--    android:layout_width="300px"-->
-<!--    android:layout_height="445px" />-->
+  <!--  <com.facebook.drawee.view.SimpleDraweeView-->
+  <!--    android:id="@+id/imgPoster"-->
+  <!--    android:layout_width="300px"-->
+  <!--    android:layout_height="445px" />-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

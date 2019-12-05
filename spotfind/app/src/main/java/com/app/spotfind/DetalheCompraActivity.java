@@ -30,7 +30,9 @@ public class DetalheCompraActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     Fresco.initialize(this);
     setContentView(R.layout.activity_detalhe_compra);
+
     compras = (Compras) getIntent().getExtras().get("compras");
+    setTitle("Detalha da Compra " +compras.getId());
 
     final String imdbId = compras.getImdbId();
     String urlBuscaImbd = "Sessoes?filter[where][imdbId]=" + imdbId;
@@ -43,6 +45,7 @@ public class DetalheCompraActivity extends AppCompatActivity {
     final TextView local = findViewById(R.id.txtLocal);
     final TextView valor = findViewById(R.id.txtValor);
     final SimpleDraweeView imgPoster = findViewById(R.id.imageViewCapa);
+
 
     Call<List<Sessoes>> call = new RetrofitConfig().getSessoesService().getFilmePorImdbId(urlBuscaImbd);
     call.enqueue(new Callback<List<Sessoes>>() {
@@ -57,9 +60,9 @@ public class DetalheCompraActivity extends AppCompatActivity {
         atores.setText(s.getAtores());
         imdb.setText(s.getImdbId());
         local.setText(s.getLocal());
-        valor.setText(s.getValor());
-//        Uri uri = Uri.parse(s.getPoster());
-//        imgPoster.setImageURI(uri);
+        valor.setText("R$ "+compras.getValor()+",00");
+        Uri uri = Uri.parse(s.getPoster());
+        imgPoster.setImageURI(uri);
       }
 
       @Override
