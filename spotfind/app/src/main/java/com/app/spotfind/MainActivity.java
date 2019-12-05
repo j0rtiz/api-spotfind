@@ -6,11 +6,14 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.app.spotfind.Models.Usuario;
 import com.facebook.drawee.backends.pipeline.Fresco;
 
 public class MainActivity extends AppCompatActivity {
 
-  private int usuarioId;
+  private String usuarioId;
+  private Usuario usuario;
+  private String usuarioHash;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     setTitle("Início");
 
-    usuarioId = (int) getIntent().getExtras().get("usuarioId");
+    usuario = (Usuario) getIntent().getExtras().get("usuario");
+    usuarioId = usuario.getUserId();
+    usuarioHash = usuario.getId();
+
   }
 
   public void comprasListagem(View view) {
@@ -49,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     Bundle bundle = new Bundle();
 
-    bundle.putSerializable("usuarioId", usuarioId);
+    bundle.putSerializable("usuario", usuario);
     deletaContaAc.putExtras(bundle);
 
     startActivity(deletaContaAc);

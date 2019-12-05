@@ -6,4 +6,53 @@
   android:layout_height="match_parent"
   tools:context=".ConfirmaDeletaContaActivity">
 
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="345dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="1dp">
+
+
+    <TextView
+      android:id="@+id/textView8"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/voce_deseja_deletar"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      tools:text="@string/confirma_delete_txt" />
+
+    <Button
+      android:id="@+id/deesistoContaBtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:background="#673AB7"
+      android:onClick="voltarMain"
+      android:text="@string/desisto"
+      android:textColor="#FFFFFF"
+      android:textSize="17sp"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="448dp" />
+
+    <Button
+      android:id="@+id/deletaContaBtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+      android:background="#FF0000"
+      android:onClick="deletarMesmo"
+      android:text="@string/deletar_conta"
+      android:textColor="#FFFFFF"
+      android:textSize="17sp"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="448dp" />
+
+
+  </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

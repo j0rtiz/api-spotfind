@@ -31,4 +31,7 @@
   <string name="preencha_senha">Defina uma senha!</string>
   <string name="erro_cadastrar">Erro no servidor ao cadastrar</string>
   <string name="deletar_conta">Deletar Minha Conta</string>
+  <string name="confirma_delete_txt">Você deseja mesmo deletar sua conta?</string>
+  <string name="desisto">Não Quero!</string>
+  <string name="voce_deseja_deletar">Você deseja mesmo deletar sua conta?</string>
 </resources>

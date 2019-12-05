@@ -1,6 +1,8 @@
 package com.app.spotfind.Models;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
 
   private String password;
   private String email;

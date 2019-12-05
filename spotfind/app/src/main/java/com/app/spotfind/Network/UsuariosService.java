@@ -16,5 +16,5 @@ public interface UsuariosService {
     Call<Usuario> postCadastroUsuario(@Body Usuario novoUsuario);
 
     @DELETE("Usuarios/{id}")
-    Call<Usuario> deleteUsuario(@Path("id") int id);
+    Call<Usuario> deleteUsuario(@Path("id") String id);
 }

@@ -13,6 +13,8 @@ import com.app.spotfind.Models.Sessoes;
 import com.app.spotfind.Models.Usuario;
 import com.app.spotfind.Network.RetrofitConfig;
 
+import java.io.Serializable;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -44,11 +46,14 @@ public class LoginActivity extends AppCompatActivity {
     call.enqueue(new Callback<Usuario>() {
       @Override
       public void onResponse(Call<Usuario> call, Response<Usuario> response) {
+        usuario.setPassword(null);
         Usuario login = response.body();
 
         try {
-          if (login.getUserId() != null) {
-            goToMainActivity(Integer.parseInt(login.getUserId()));
+          if (login.getId() != null) {
+            usuario.setId(login.getId());
+            usuario.setUserId(login.getUserId());
+            goToMainActivity(usuario);
           }
         } catch (Exception e) {
           Log.e("Usuarios: ", "Erro: " + e.getMessage());
@@ -63,11 +68,11 @@ public class LoginActivity extends AppCompatActivity {
     });
   }
 
-  public void goToMainActivity(int usuarioId) {
+  public void goToMainActivity(Usuario usuario) {
     Intent mainActivity = new Intent(this, MainActivity.class);
     Bundle bundle = new Bundle();
 
-    bundle.putSerializable("usuarioId", usuarioId);
+    bundle.putSerializable("usuario", usuario);
     mainActivity.putExtras(bundle);
     startActivity(mainActivity, null);
   }
