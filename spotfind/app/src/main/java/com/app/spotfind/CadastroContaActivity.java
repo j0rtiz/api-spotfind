@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.spotfind.Models.Usuario;
@@ -19,6 +18,9 @@ import retrofit2.Response;
 
 public class CadastroContaActivity extends AppCompatActivity {
   String user;
+  private String email;
+  private String nome;
+  private String password;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -28,32 +30,41 @@ public class CadastroContaActivity extends AppCompatActivity {
     setTitle("Cadastre Agora!");
   }
 
+  boolean isEmailValid(String email) {
+    return android.util.Patterns.EMAIL_ADDRESS.matcher(email)
+      .matches();
+  }
+
   public void chamadaCadastro() {
 
     EditText emailCad = findViewById(R.id.emailCadEditText3);
     EditText passCad = findViewById(R.id.senhaCadEditText);
     EditText nomeCad = findViewById(R.id.nomeCadEditText);
 
-    if (emailCad.getText().toString().equals("")) {
+
+//    if (emailCad.getText().toString().equals("")) {
+    email = emailCad.getText().toString();
+    if (!isEmailValid(email)) {
       Toast.makeText(getApplicationContext(), R.string.preencha_email, Toast.LENGTH_LONG).show();
-      ;
       return;
     }
 
-    if (nomeCad.getText().toString().equals("")) {
+    nome = nomeCad.getText().toString();
+    if (nome.equals("")) {
       Toast.makeText(getApplicationContext(), R.string.preencha_nome, Toast.LENGTH_LONG).show();
       return;
     }
 
-    if (passCad.getText().toString().equals("")) {
+    password = passCad.getText().toString();
+    if (password.isEmpty() || password.length() < 5 || password.contains(" ")) {
       Toast.makeText(getApplicationContext(), R.string.preencha_senha, Toast.LENGTH_LONG).show();
       return;
     }
 
     final Usuario usuario = new Usuario();
-    usuario.setEmail(emailCad.getText().toString());
-    usuario.setPassword(passCad.getText().toString());
-    usuario.setNome(nomeCad.getText().toString());
+    usuario.setEmail(email);
+    usuario.setPassword(password);
+    usuario.setNome(nome);
 
     Call<Usuario> call = new RetrofitConfig().loginUsuarioService().postCadastroUsuario(usuario);
     call.enqueue(new Callback<Usuario>() {
@@ -95,7 +106,7 @@ public class CadastroContaActivity extends AppCompatActivity {
     Toast.makeText(this, R.string.erro_cadastrar, Toast.LENGTH_LONG).show();
   }
 
-  public void cadastrar(View view){
+  public void cadastrar(View view) {
     chamadaCadastro();
   }
 
